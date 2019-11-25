@@ -1,0 +1,676 @@
+2019-11-24 03:54:53,817 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-11-24 03:55:18,672 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 03:55:19,378 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:19,424 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:FaceRecognition:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/FaceRecognition/pom.xml.
+2019-11-24 03:55:19,855 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:19,872 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:NeuralStyleTransfer:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/NeuralStyleTransfer/pom.xml.
+2019-11-24 03:55:19,930 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:HandWrittenDigitRecognizer:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/HandWrittenDigitRecognizer/pom.xml.
+2019-11-24 03:55:19,941 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:19,985 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:AutonomousDriving:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/AutonomousDriving/pom.xml.
+2019-11-24 03:55:20,019 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:20,038 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:CarTracking:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CarTracking/pom.xml.
+2019-11-24 03:55:20,484 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:20,504 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:CatVsDogRecognition:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CatVsDogRecognition/pom.xml.
+2019-11-24 03:55:20,639 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:20,667 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:common:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/pom.xml.
+2019-11-24 03:55:20,701 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 03:55:20,707 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:20,738 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:FaceRecognition:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/FaceRecognition/pom.xml.
+2019-11-24 03:55:20,767 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:20,781 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:HandWrittenDigitRecognizer:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/HandWrittenDigitRecognizer/pom.xml.
+2019-11-24 03:55:20,786 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:20,812 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:AutonomousDriving:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/AutonomousDriving/pom.xml.
+2019-11-24 03:55:20,841 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:20,856 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:CarTracking:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CarTracking/pom.xml.
+2019-11-24 03:55:20,884 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:20,899 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:CatVsDogRecognition:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CatVsDogRecognition/pom.xml.
+2019-11-24 03:55:20,908 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:21,626 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/main/java
+2019-11-24 03:55:21,627 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /common/src/main/resources
+2019-11-24 03:55:21,627 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/test/java
+2019-11-24 03:55:22,372 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AutonomousDriving/src/main/java
+2019-11-24 03:55:22,372 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AutonomousDriving/src/main/resources
+2019-11-24 03:55:22,372 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AutonomousDriving/src/test/java
+2019-11-24 03:55:22,718 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /NeuralStyleTransfer/src/main/java
+2019-11-24 03:55:22,719 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /NeuralStyleTransfer/src/main/resources
+2019-11-24 03:55:22,721 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /NeuralStyleTransfer/src/test/java
+2019-11-24 03:55:22,871 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CatVsDogRecognition/src/main/java
+2019-11-24 03:55:22,871 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CatVsDogRecognition/src/main/resources
+2019-11-24 03:55:22,871 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CatVsDogRecognition/src/test/java
+2019-11-24 03:55:23,049 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-24 03:55:23,050 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-24 03:55:23,050 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-24 03:55:23,227 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HandWrittenDigitRecognizer/src/main/java
+2019-11-24 03:55:23,228 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HandWrittenDigitRecognizer/src/main/resources
+2019-11-24 03:55:23,229 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HandWrittenDigitRecognizer/src/test/java
+2019-11-24 03:55:23,390 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /FaceRecognition/src/main/java
+2019-11-24 03:55:23,390 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /FaceRecognition/src/main/resources
+2019-11-24 03:55:23,395 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /FaceRecognition/src/test/java
+2019-11-24 03:55:23,723 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CarTracking/src/main/java
+2019-11-24 03:55:23,723 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CarTracking/src/main/resources
+2019-11-24 03:55:23,723 [Worker-6: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CarTracking/src/test/java
+2019-11-24 03:55:24,193 [Worker-6: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 8 project(s) in 7 sec
+2019-11-24 03:55:25,648 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:25,663 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 20 resources
+2019-11-24 03:55:25,706 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:25,707 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/NeuralStyleTransfer/src/test/resources
+2019-11-24 03:55:26,170 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:26,171 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 03:55:26,173 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:26,174 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 03:55:26,933 [Worker-1: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:26,957 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:26,959 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2019-11-24 03:55:26,998 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:26,998 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/HandWrittenDigitRecognizer/src/test/resources
+2019-11-24 03:55:28,049 [Worker-1: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:28,055 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:28,059 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 263 resources
+2019-11-24 03:55:28,851 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:28,852 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/FaceRecognition/src/test/resources
+2019-11-24 03:55:29,542 [Worker-1: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:29,570 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:29,571 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 03:55:29,596 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:29,596 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 03:55:30,210 [Worker-1: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:30,240 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:30,242 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2019-11-24 03:55:30,267 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:30,268 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CatVsDogRecognition/src/test/resources
+2019-11-24 03:55:32,007 [Worker-1: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:32,012 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:32,014 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2019-11-24 03:55:33,035 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:33,035 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CarTracking/src/test/resources
+2019-11-24 03:55:34,067 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:34,069 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 03:55:34,071 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:34,072 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/NeuralStyleTransfer/src/test/resources
+2019-11-24 03:55:34,535 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:34,536 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 03:55:34,537 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:34,537 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 03:55:34,881 [Worker-9: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:34,904 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:34,904 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 03:55:34,907 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:34,907 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/HandWrittenDigitRecognizer/src/test/resources
+2019-11-24 03:55:35,676 [Worker-9: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:35,681 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:35,682 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 03:55:35,688 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:35,691 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/FaceRecognition/src/test/resources
+2019-11-24 03:55:36,005 [Worker-9: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:36,026 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:36,027 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 03:55:36,028 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:36,029 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 03:55:36,566 [Worker-9: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:36,586 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:36,587 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 03:55:36,588 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:36,589 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CatVsDogRecognition/src/test/resources
+2019-11-24 03:55:37,546 [Worker-9: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:37,556 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:37,557 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 03:55:37,559 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:37,560 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CarTracking/src/test/resources
+2019-11-24 03:55:38,504 [Worker-9: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 03:55:38,508 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:38,509 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2019-11-24 03:55:38,657 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:55:38,658 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/AutonomousDriving/src/test/resources
+2019-11-24 03:55:54,340 [Worker-11: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 03:55:54,621 [Worker-11: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 03:55:54,872 [Worker-11: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 03:56:20,826 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:56:20,828 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 03:56:20,829 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 03:56:20,830 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 03:56:36,249 [Worker-13: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 03:56:36,484 [Worker-13: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 03:56:36,723 [Worker-13: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 03:56:46,292 [Worker-1: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 03:56:46,503 [Worker-1: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 03:56:46,714 [Worker-1: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:07:41,691 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:07:41,694 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 04:07:41,695 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:07:41,695 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 04:08:19,853 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:08:19,854 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 04:08:19,855 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:08:19,855 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 04:08:21,553 [Worker-6: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:08:21,752 [Worker-6: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:08:21,941 [Worker-6: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:17:04,296 [Worker-16: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:17:04,298 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 04:17:04,300 [Worker-16: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:17:04,300 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 04:17:06,589 [Worker-16: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:17:06,778 [Worker-16: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:17:06,933 [Worker-16: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:18:14,998 [Worker-6: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:18:15,000 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 04:18:15,001 [Worker-6: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:18:15,001 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 04:18:27,060 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:18:27,272 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:18:27,503 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:31:34,543 [Worker-18: Launching RunEdgeDetection] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:31:34,545 [Worker-18: Launching RunEdgeDetection] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 04:31:34,547 [Worker-18: Launching RunEdgeDetection] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:31:34,547 [Worker-18: Launching RunEdgeDetection] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 04:31:34,604 [Worker-18: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:31:34,838 [Worker-18: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:31:35,040 [Worker-18: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:32:17,308 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:32:17,309 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 04:32:17,310 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:32:17,311 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 04:32:26,704 [Worker-16: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:32:26,903 [Worker-16: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:32:27,079 [Worker-16: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:39:45,265 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:39:45,266 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 04:39:45,267 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:39:45,268 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 04:39:53,198 [Worker-23: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:39:53,384 [Worker-23: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:39:53,549 [Worker-23: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:50:12,467 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:12,942 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:13,416 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:13,979 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:14,486 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:14,711 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:15,092 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:15,474 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:15,883 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:16,303 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:16,706 [ModalContext] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:17,406 [Worker-20: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:Nebitno:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CatVsDogRecognition/pom.xml.
+2019-11-24 04:50:17,604 [Worker-20: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:17,645 [Worker-20: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:17,923 [Worker-20: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:50:18,167 [Worker-20: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:50:18,169 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 04:50:18,171 [Worker-20: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:50:18,172 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CatVsDogRecognition/src/test/resources
+2019-11-24 04:50:24,757 [Worker-18: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:51:00,803 [Worker-18: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:51:00,837 [Worker-18: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:51:01,029 [Worker-18: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:51:01,232 [Worker-18: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:51:01,826 [Worker-28: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:51:02,134 [Worker-28: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:51:02,455 [Worker-28: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:52:04,021 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:52:04,023 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 04:52:04,025 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:52:04,026 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/NeuralStyleTransfer/src/test/resources
+2019-11-24 04:52:04,034 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:52:04,035 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 04:52:04,039 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:52:04,042 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CatVsDogRecognition/src/test/resources
+2019-11-24 04:52:39,021 [Worker-28: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-24 04:52:39,079 [Worker-28: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:NeuralStyleTransfer:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/NeuralStyleTransfer/pom.xml.
+2019-11-24 04:52:39,440 [Worker-28: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /NeuralStyleTransfer/src/main/java
+2019-11-24 04:52:39,441 [Worker-28: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /NeuralStyleTransfer/src/main/resources
+2019-11-24 04:52:39,441 [Worker-28: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /NeuralStyleTransfer/src/test/java
+2019-11-24 04:52:39,556 [Worker-28: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-11-24 04:52:39,990 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:52:39,991 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 20 resources
+2019-11-24 04:52:40,114 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:52:40,115 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/NeuralStyleTransfer/src/test/resources
+2019-11-24 04:52:50,188 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:52:50,189 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CarTracking/src/main/resources
+2019-11-24 04:52:50,190 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:52:50,190 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CarTracking/src/test/resources
+2019-11-24 04:53:11,985 [Worker-12: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-11-24 04:53:16,494 [Worker-15: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:53:17,646 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:17,653 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 04:53:17,660 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:17,661 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 04:53:18,741 [Worker-0: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:53:18,770 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:18,771 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2019-11-24 04:53:18,773 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:18,774 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/HandWrittenDigitRecognizer/src/test/resources
+2019-11-24 04:53:20,914 [Worker-0: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:53:20,936 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:20,944 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 263 resources
+2019-11-24 04:53:20,955 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:20,956 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/FaceRecognition/src/test/resources
+2019-11-24 04:53:22,359 [Worker-0: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:53:22,400 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:22,402 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 04:53:22,403 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:22,404 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 04:53:22,446 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:22,448 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2019-11-24 04:53:22,450 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:22,450 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/CatVsDogRecognition/src/test/resources
+2019-11-24 04:53:23,392 [Worker-0: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:53:23,412 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:23,431 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2019-11-24 04:53:23,434 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:53:23,435 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/AutonomousDriving/src/test/resources
+2019-11-24 04:53:24,687 [Worker-3: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:53:25,133 [Worker-3: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:53:25,576 [Worker-3: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:53:41,592 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:53:41,909 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:53:42,185 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:53:57,567 [Worker-5: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:53:57,895 [Worker-5: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:53:58,164 [Worker-5: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:54:14,212 [Worker-21: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:54:14,471 [Worker-21: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:54:14,677 [Worker-21: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:54:28,747 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:54:29,026 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:54:29,247 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:54:44,519 [Worker-17: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:54:44,721 [Worker-17: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:54:44,929 [Worker-17: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:54:59,703 [Worker-10: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:55:00,015 [Worker-10: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:55:00,236 [Worker-10: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:55:40,116 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-24 04:55:40,523 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 04:55:40,727 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:55:40,764 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:common:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/pom.xml.
+2019-11-24 04:55:41,058 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/main/java
+2019-11-24 04:55:41,059 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /common/src/main/resources
+2019-11-24 04:55:41,059 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/test/java
+2019-11-24 04:55:41,146 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-24 04:55:41,146 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-24 04:55:41,146 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-24 04:55:41,311 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-11-24 04:55:41,927 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:55:41,928 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 04:55:41,937 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:55:41,937 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 04:55:42,331 [Worker-18: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:55:42,349 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:55:42,349 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 04:55:42,380 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:55:42,381 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 04:55:48,302 [Worker-2: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:55:48,540 [Worker-2: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:55:48,846 [Worker-2: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:56:17,854 [Worker-8: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:56:18,058 [Worker-8: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:56:18,261 [Worker-8: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:58:13,885 [Worker-1: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:58:14,183 [Worker-1: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:58:14,411 [Worker-1: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 04:59:23,967 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-24 04:59:24,280 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 04:59:24,563 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:59:24,598 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:common:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/pom.xml.
+2019-11-24 04:59:24,997 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/main/java
+2019-11-24 04:59:24,997 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /common/src/main/resources
+2019-11-24 04:59:24,997 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/test/java
+2019-11-24 04:59:25,084 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-24 04:59:25,085 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-24 04:59:25,085 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-24 04:59:25,263 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-11-24 04:59:25,704 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:59:25,705 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 04:59:25,713 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:59:25,714 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 04:59:26,111 [Worker-14: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 04:59:26,130 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:59:26,131 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 04:59:26,153 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 04:59:26,153 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:03:42,710 [Worker-11: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ramo.klevis.ml:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:03:43,098 [Worker-11: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:03:43,142 [Worker-12: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:03:43,377 [Worker-11: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:03:43,380 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 05:03:43,382 [Worker-11: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:03:43,383 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:03:43,424 [Worker-12: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:03:44,816 [Worker-15: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: ramo.klevis.ml:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:03:44,836 [Worker-15: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:03:44,847 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:03:44,881 [Worker-15: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:03:44,881 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:07:34,456 [Worker-3: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:common:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/pom.xml.
+2019-11-24 05:07:34,910 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:07:34,912 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 05:07:34,914 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:07:34,914 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 05:07:58,991 [Worker-3: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:07:58,993 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for ramo.klevis.ml:common:jar:1.0-SNAPSHOT is missing, no dependency information available
+2019-11-24 05:07:59,293 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:07:59,293 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 05:07:59,294 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:07:59,294 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:08:13,536 [Worker-14: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:08:13,709 [Worker-12: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:08:13,793 [Worker-14: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:08:13,916 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:08:13,918 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 05:08:13,921 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:08:13,922 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:08:15,348 [Worker-3: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:08:15,406 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:08:15,407 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:08:15,433 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:08:15,434 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:08:20,463 [Worker-11: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:08:20,682 [Worker-11: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:08:20,916 [Worker-11: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:12:45,917 [Worker-22: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:12:46,405 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:12:46,406 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 05:12:46,407 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:12:46,408 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:12:47,574 [Worker-3: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for elmir.sut.project:common:1.0-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact elmir.sut.project:common:jar:sources:1.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.500.v20190620-1426.jar:na]
+2019-11-24 05:13:13,122 [Worker-22: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for elmir.sut.project:common:1.0-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact elmir.sut.project:common:jar:javadoc:1.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.500.v20190620-1426.jar:na]
+2019-11-24 05:14:20,827 [Worker-3: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:14:21,291 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:14:21,292 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 05:14:21,293 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:14:21,293 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:16:49,128 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-24 05:16:49,173 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:16:49,461 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:16:49,714 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-24 05:16:49,714 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-24 05:16:49,714 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-24 05:16:49,863 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-11-24 05:16:50,374 [Worker-24: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:16:50,407 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:16:50,409 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:16:50,440 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:16:50,440 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:16:57,050 [Worker-24: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:16:57,295 [Worker-24: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:16:57,533 [Worker-24: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:17:40,553 [Worker-23: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:17:40,912 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:17:40,917 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-24 05:17:40,918 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:17:40,920 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:18:01,744 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-24 05:18:01,794 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:18:02,180 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-24 05:18:02,180 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-24 05:18:02,181 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-24 05:18:02,279 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-11-24 05:18:02,617 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:18:02,619 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:18:02,640 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:18:02,641 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:18:20,024 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-24 05:18:20,072 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:18:20,410 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-24 05:18:20,411 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-24 05:18:20,411 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-24 05:18:20,492 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-11-24 05:18:20,843 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:18:20,845 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:18:20,867 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:18:20,867 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:19:56,835 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-24 05:19:56,880 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:19:57,183 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:19:57,423 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-24 05:19:57,423 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-24 05:19:57,424 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-24 05:19:57,562 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-11-24 05:19:57,967 [Worker-14: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:19:57,990 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:19:57,992 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:19:58,016 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:19:58,016 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:20:10,047 [Worker-12: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:20:10,255 [Worker-12: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:20:10,472 [Worker-12: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:25:15,680 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:25:15,681 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 05:25:15,683 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:25:15,683 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 05:26:59,886 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:26:59,888 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:26:59,889 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:26:59,890 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:27:15,578 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:27:15,579 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:27:15,580 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:27:15,580 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:36:24,348 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:36:24,350 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 05:36:24,351 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:36:24,352 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 05:36:24,383 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:36:24,384 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:36:24,385 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:36:24,386 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:37:55,548 [Worker-27: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:37:55,549 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:37:55,550 [Worker-27: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:37:55,551 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:37:59,641 [Worker-26: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:37:59,853 [Worker-26: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:38:00,064 [Worker-26: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:39:13,364 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:39:13,365 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 05:39:13,365 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:39:13,366 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 05:39:55,532 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:39:55,533 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:39:55,535 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:39:55,535 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:40:00,139 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:40:00,348 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:40:00,565 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:40:23,896 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:40:23,897 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:40:23,899 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:40:23,899 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:41:04,397 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:41:04,400 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:41:04,401 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:41:04,402 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:41:25,124 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:41:25,125 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:41:25,126 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:41:25,127 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:41:27,385 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:41:27,386 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:41:27,387 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:41:27,388 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:42:29,132 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:42:29,133 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:42:29,134 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:42:29,134 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:42:34,135 [Worker-26: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:42:34,438 [Worker-26: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:42:34,623 [Worker-26: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:43:34,754 [Worker-27: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:43:34,755 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 05:43:34,756 [Worker-27: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:43:34,757 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 05:43:39,181 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:43:39,366 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:43:39,555 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:43:49,508 [Worker-25: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-24 05:43:49,822 [Worker-25: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:43:50,085 [Worker-25: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:43:50,111 [Worker-25: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:common:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/pom.xml.
+2019-11-24 05:43:50,368 [Worker-25: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/main/java
+2019-11-24 05:43:50,369 [Worker-25: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /common/src/main/resources
+2019-11-24 05:43:50,369 [Worker-25: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/test/java
+2019-11-24 05:43:50,439 [Worker-25: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-24 05:43:50,439 [Worker-25: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-24 05:43:50,439 [Worker-25: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-24 05:43:50,570 [Worker-25: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-11-24 05:43:50,998 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:43:50,999 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 05:43:51,007 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:43:51,007 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 05:43:51,445 [Worker-32: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:43:51,467 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:43:51,468 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:43:51,495 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:43:51,495 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:44:04,384 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:44:04,575 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:44:04,760 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:50:21,019 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-24 05:50:21,290 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/pom.xml.
+2019-11-24 05:50:21,583 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:50:21,608 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:common:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/pom.xml.
+2019-11-24 05:50:21,847 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/main/java
+2019-11-24 05:50:21,847 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /common/src/main/resources
+2019-11-24 05:50:21,847 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/test/java
+2019-11-24 05:50:21,904 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-24 05:50:21,904 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-24 05:50:21,904 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-24 05:50:22,022 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-11-24 05:50:22,379 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:50:22,380 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-24 05:50:22,386 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:50:22,387 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-24 05:50:22,615 [Worker-23: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-24 05:50:22,638 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:50:22,639 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-24 05:50:22,659 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-24 05:50:22,660 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-24 05:50:35,765 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:50:35,978 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-24 05:50:36,168 [Worker-14: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 06:21:38,746 [Worker-81: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 06:21:39,486 [Worker-81: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 06:21:39,731 [Worker-81: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 06:34:38,610 [Worker-72: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 06:34:38,617 [Worker-72: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-25 06:34:38,618 [Worker-72: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 06:34:38,618 [Worker-72: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-25 06:34:47,062 [Worker-74: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 06:34:47,063 [Worker-74: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-25 06:34:47,063 [Worker-74: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 06:34:47,064 [Worker-74: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/common/src/test/resources
+2019-11-25 07:01:31,036 [Worker-83: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 07:01:31,043 [Worker-83: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-25 07:01:31,046 [Worker-83: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 07:01:31,046 [Worker-83: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-25 08:14:04,250 [Worker-91: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 08:14:04,261 [Worker-91: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/main/resources
+2019-11-25 08:14:04,262 [Worker-91: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 08:14:04,262 [Worker-91: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Java-Machine-Learning-for-Computer-Vision-master-2/EdgeDetection/src/test/resources
+2019-11-25 08:14:47,890 [Worker-11: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-11-25 08:14:51,491 [Worker-7: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 08:14:51,521 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-25 08:14:51,533 [Worker-7: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 08:14:51,533 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/common/src/test/resources
+2019-11-25 08:14:52,535 [Worker-7: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-25 08:14:52,570 [Worker-7: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 08:14:52,575 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-25 08:14:52,631 [Worker-7: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 08:14:52,631 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-25 08:15:11,648 [Worker-4: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 08:15:11,977 [Worker-4: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 08:15:12,224 [Worker-4: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 08:17:40,299 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-25 08:17:40,802 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/pom.xml.
+2019-11-25 08:17:41,226 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-25 08:17:41,279 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:common:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/common/pom.xml.
+2019-11-25 08:17:41,534 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/main/java
+2019-11-25 08:17:41,535 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /common/src/main/resources
+2019-11-25 08:17:41,535 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/test/java
+2019-11-25 08:17:41,631 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-25 08:17:41,631 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-25 08:17:41,632 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-25 08:17:41,799 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-11-25 08:17:42,310 [Worker-6: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 08:17:42,314 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-25 08:17:42,317 [Worker-6: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 08:17:42,317 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/common/src/test/resources
+2019-11-25 08:17:42,698 [Worker-6: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-25 08:17:42,715 [Worker-6: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 08:17:42,716 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-25 08:17:42,737 [Worker-6: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 08:17:42,738 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-25 09:15:36,541 [Worker-15: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 09:15:37,031 [Worker-15: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 09:15:37,217 [Worker-15: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 09:15:53,813 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-25 09:15:54,124 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:EdgeDetection:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/pom.xml.
+2019-11-25 09:15:54,396 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-25 09:15:54,422 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: elmir.sut.project:common:1.0-SNAPSHOT @ /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/common/pom.xml.
+2019-11-25 09:15:54,638 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/main/java
+2019-11-25 09:15:54,638 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /common/src/main/resources
+2019-11-25 09:15:54,638 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common/src/test/java
+2019-11-25 09:15:54,714 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/main/java
+2019-11-25 09:15:54,714 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /EdgeDetection/src/main/resources
+2019-11-25 09:15:54,714 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /EdgeDetection/src/test/java
+2019-11-25 09:15:54,883 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-11-25 09:15:55,295 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 09:15:55,298 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-25 09:15:55,308 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 09:15:55,309 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/common/src/test/resources
+2019-11-25 09:15:55,656 [Worker-1: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-25 09:15:55,673 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 09:15:55,674 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-25 09:15:55,694 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 09:15:55,694 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-25 09:16:02,409 [Worker-20: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 09:16:02,582 [Worker-20: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 09:16:02,773 [Worker-20: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 09:20:06,139 [Worker-3: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 09:20:06,301 [Worker-3: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 09:20:06,475 [Worker-3: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-25 18:58:01,606 [Worker-38: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 18:58:01,627 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-25 18:58:01,630 [Worker-38: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 18:58:01,631 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-25 20:00:20,054 [Worker-38: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 20:00:20,059 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-25 20:00:20,062 [Worker-38: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-25 20:00:20,063 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
