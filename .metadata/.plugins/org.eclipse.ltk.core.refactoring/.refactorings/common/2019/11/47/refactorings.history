@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;common&apos;&#x0A;- Original project: &apos;common&apos;&#x0A;- Original element: &apos;common/src/main/java/ramo.klevis.ml.ui&apos;" description="Delete element" element1="/src\/main\/java&lt;ramo.klevis.ml.ui" element2="/src\/main\/java&lt;ramo.klevis.ml" element3="/src\/main\/java&lt;ramo.klevis" element4="/src\/main\/java&lt;ramo" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1574570614537" subPackages="false" version="1.0"/>
+</session>
