@@ -4,7 +4,11 @@ package elmir.sut.project;
  * Handles the convolution operation with a filter
  */
 public class Convolution {
-
+	
+/** 
+ * Notice : I will use only grey scale photo, colors will be converted to white intensity number
+ * 
+ */
 
     /**
      * Takes an image (grey-levels) and a kernel and a position,
@@ -19,21 +23,23 @@ public class Convolution {
      * @param kernelHeight The height of the kernel.
      * @return The new pixel value after the convolution.
      */
-    public static double singlePixelConvolution(double[][] input,
-                                                int x, int y,
-                                                double[][] k,
-                                                int kernelWidth,
+	
+    public static double singlePixelConvolution(double[][] input, //part of the picture we select
+                                                int x, int y, //to get current part of the picture to be convoluted
+                                                double[][] k, //actual kernel matrix
+                                                int kernelWidth, //kernel size used in loop
                                                 int kernelHeight) {
-        double output = 0;
+        double output = 0; //accumulator
         for (int i = 0; i < kernelWidth; ++i) {
             for (int j = 0; j < kernelHeight; ++j) {
-                output = output + (input[x + i][y + j] * k[i][j]);
+                output = output + (input[x + i][y + j] * k[i][j]); //we traverse through kernel and multiply
             }
         }
         return output;
     }
 
 
+    
     /**
      * Takes a 2D array of grey-levels and a kernel and applies the convolution
      * over the area of the image specified by width and height.
@@ -51,23 +57,27 @@ public class Convolution {
                                            double[][] kernel,
                                            int kernelWidth,
                                            int kernelHeight) {
+    	
         int smallWidth = width - kernelWidth + 1;
         int smallHeight = height - kernelHeight + 1;
-        double[][] output = new double[smallWidth][smallHeight];
-        for (int i = 0; i < smallWidth; ++i) {
+        double[][] output = new double[smallWidth][smallHeight];//now result is 2d matrix
+        
+        for (int i = 0; i < smallWidth; ++i) { //instantiating values in output matrix
             for (int j = 0; j < smallHeight; ++j) {
                 output[i][j] = 0;
             }
         }
-        for (int i = 0; i < smallWidth; ++i) {
+        for (int i = 0; i < smallWidth; ++i) { //filling in the values
             for (int j = 0; j < smallHeight; ++j) {
                 output[i][j] = singlePixelConvolution(input, i, j, kernel,
-                        kernelWidth, kernelHeight);
+                        kernelWidth, kernelHeight); //calculating every single pixel and saving it
+                
             }
         }
         return output;
     }
 
+    
     /**
      * Takes a 2D array of grey-levels and a kernel, applies the convolution
      * over the area of the image specified by width and height and returns

@@ -7,9 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 
-/**
- * Created by Klevis Ramo
- */
+
 public class EdgeDetection {
 
     public static final String HORIZONTAL_FILTER = "Horizontal Filter";
