@@ -35,6 +35,7 @@ public class EdgeDetection {
 
     }
 
+    
     public File detectEdges(BufferedImage bufferedImage, String selectedFilter) throws IOException {
         double[][][] image = transformImageToArray(bufferedImage);
         double[][] filter = filterMap.get(selectedFilter);
@@ -42,6 +43,7 @@ public class EdgeDetection {
                 bufferedImage.getHeight(), image, filter);
         return createImageFromConvolutionMatrix(bufferedImage, convolvedPixels);
     }
+    
 
     private double[][][] transformImageToArray(BufferedImage bufferedImage) {
         int width = bufferedImage.getWidth();
@@ -72,6 +74,7 @@ public class EdgeDetection {
         }
         return finalConv;
     }
+    
 
     private File createImageFromConvolutionMatrix(BufferedImage originalImage, double[][] imageRGB) throws IOException {
         BufferedImage writeBackImage = new BufferedImage(originalImage.getWidth(), originalImage.getHeight(), BufferedImage.TYPE_INT_RGB);
