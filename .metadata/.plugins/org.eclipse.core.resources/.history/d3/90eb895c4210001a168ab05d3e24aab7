@@ -88,7 +88,6 @@ public class EdgeDetectionUI {
         	String basePath = new File("").getAbsolutePath();
             System.out.println(basePath + " EdgeDetectionUI");
             
-            //here we set to choose directly from our resources
             JFileChooser chooser = new JFileChooser();
             chooser.setCurrentDirectory(new File(basePath+"/src/main/resources"));
             int action = chooser.showOpenDialog(null);

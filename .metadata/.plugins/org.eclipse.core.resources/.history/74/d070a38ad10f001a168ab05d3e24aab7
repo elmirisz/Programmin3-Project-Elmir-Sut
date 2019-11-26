@@ -46,22 +46,16 @@ public class EdgeDetectionUI {
         
         JPanel northPanel = fillNorthPanel();
 
-        mainFrame.add(northPanel, BorderLayout.NORTH);
+       // mainFrame.add(northPanel, BorderLayout.NORTH);
         mainFrame.add(mainPanel, BorderLayout.CENTER);
         mainFrame.setVisible(true);
     }
-//___________________________________________________________came until here
-    //part with buttons
+
     private JPanel fillNorthPanel() {
-    	
-    	//button to select image to be convoluted
         JButton chooseButton = new JButton("Select Image");
         chooseButton.setFont(sansSerifBold);
 
-        //part with buttons 
         JPanel northPanel = new JPanel();
-        
-        //dropdown list to select convolution type
         JComboBox filterType = new JComboBox();
         filterType.addItem(HORIZONTAL_FILTER);
         filterType.addItem(VERTICAL_FILTER);
@@ -72,25 +66,17 @@ public class EdgeDetectionUI {
         filterType.addItem(SCHARR_FILTER_VETICAL);
         filterType.addItem(SCHARR_FILTER_HORIZONTAL);
         filterType.setFont(sansSerifBold);
-        //end of dropdown
-        
-        //button to apply convolution
-        JButton detect = new JButton("Apply convolution (Edge detection)");
+
+        JButton detect = new JButton("Apply convolution");
         detect.setFont(sansSerifBold);
-        //place where we add kernel selection, image selection and convolution application
+
         northPanel.add(filterType);
         northPanel.add(chooseButton);
         northPanel.add(detect);
 
-        //function supporting image selection
         chooseButton.addActionListener(event -> {
-        	//here we need get absolute path 
-        	String basePath = new File("").getAbsolutePath();
-            System.out.println(basePath + " EdgeDetectionUI");
-            
-            //here we set to choose directly from our resources
             JFileChooser chooser = new JFileChooser();
-            chooser.setCurrentDirectory(new File(basePath+"/src/main/resources"));
+            chooser.setCurrentDirectory(new File("EdgeDetection/src/main/resources"));
             int action = chooser.showOpenDialog(null);
             if (action == JFileChooser.APPROVE_OPTION) {
                 try {
