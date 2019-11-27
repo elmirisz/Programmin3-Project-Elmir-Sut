@@ -37,11 +37,15 @@ public class EdgeDetection {
 
     
     public File detectEdges(BufferedImage bufferedImage, String selectedFilter) throws IOException {
-        double[][][] image = transformImageToArray(bufferedImage);
-        double[][] filter = filterMap.get(selectedFilter);
+    	//place where we got read original picture, not converted to array
+        double[][][] image = transformImageToArray(bufferedImage); //conversion to array
+        
+        double[][] filter = filterMap.get(selectedFilter);//kernel
+        
         double[][] convolvedPixels = applyConvolution(bufferedImage.getWidth(),
-                bufferedImage.getHeight(), image, filter);
-        return createImageFromConvolutionMatrix(bufferedImage, convolvedPixels);
+                bufferedImage.getHeight(), image, filter); //to start process
+        
+        return createImageFromConvolutionMatrix(bufferedImage, convolvedPixels); 
     }
     
 
@@ -67,6 +71,8 @@ public class EdgeDetection {
         double[][] greenConv = convolution.convolutionType2(image[1], height, width, filter, 3, 3, 1);
         double[][] blueConv = convolution.convolutionType2(image[2], height, width, filter, 3, 3, 1);
         double[][] finalConv = new double[redConv.length][redConv[0].length];
+        //here we create gray version of convolution
+        
         for (int i = 0; i < redConv.length; i++) {
             for (int j = 0; j < redConv[i].length; j++) {
                 finalConv[i][j] = redConv[i][j] + greenConv[i][j] + blueConv[i][j];
@@ -77,13 +83,15 @@ public class EdgeDetection {
     
 
     private File createImageFromConvolutionMatrix(BufferedImage originalImage, double[][] imageRGB) throws IOException {
+    	//here we just get width height in order to be same size, this is empty picture with proportions as original
         BufferedImage writeBackImage = new BufferedImage(originalImage.getWidth(), originalImage.getHeight(), BufferedImage.TYPE_INT_RGB);
+        
         for (int i = 0; i < imageRGB.length; i++) {
             for (int j = 0; j < imageRGB[i].length; j++) {
                 Color color = new Color(fixOutOfRangeRGBValues(imageRGB[i][j]),
-                        fixOutOfRangeRGBValues(imageRGB[i][j]),
-                        fixOutOfRangeRGBValues(imageRGB[i][j]));
-                writeBackImage.setRGB(j, i, color.getRGB());
+                        fixOutOfRangeRGBValues(imageRGB[i][j]),//just to fix if bigger or smaller
+                        fixOutOfRangeRGBValues(imageRGB[i][j]));//same, will be grey but converting it for computer
+                writeBackImage.setRGB(j, i, color.getRGB()); //we have image created back
             }
         } 
         //my experimenting part
@@ -98,7 +106,7 @@ public class EdgeDetection {
         
         
         File outputFile = new File( basePath + "/edgesTmp.png");
-        ImageIO.write(writeBackImage, "png", outputFile);
+        ImageIO.write(writeBackImage, "png", outputFile); //here we save image back
         return outputFile;
     }
 

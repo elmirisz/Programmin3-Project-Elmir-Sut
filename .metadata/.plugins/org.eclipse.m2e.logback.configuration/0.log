@@ -793,3 +793,59 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact elmir.sut.pro
 2019-11-26 12:54:50,482 [Worker-148: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
 2019-11-26 12:54:50,763 [Worker-148: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
 2019-11-26 12:54:50,912 [Worker-148: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-27 03:53:15,129 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-11-27 03:53:25,039 [Worker-4: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier  to /common/target/classes
+2019-11-27 03:53:25,376 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 03:53:25,395 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 03:53:25,532 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 03:53:25,532 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 03:54:38,163 [Worker-13: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 03:54:38,171 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 03:54:38,173 [Worker-13: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 03:54:38,173 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 03:55:02,166 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 03:55:02,168 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 03:55:02,171 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 03:55:02,171 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 03:55:40,094 [Worker-11: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-27 03:55:40,518 [Worker-11: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-27 03:55:40,872 [Worker-11: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-27 04:03:34,118 [Worker-16: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 04:03:34,121 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 04:03:34,123 [Worker-16: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 04:03:34,124 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 04:04:23,615 [Worker-16: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 04:04:23,617 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 04:04:23,619 [Worker-16: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 04:04:23,620 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 05:04:23,630 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:04:23,634 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 05:04:23,636 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:04:23,636 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 05:04:40,387 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:04:40,388 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 05:04:40,390 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:04:40,391 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 05:07:08,859 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:07:08,861 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 05:07:08,863 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:07:08,864 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 05:07:31,747 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:07:31,749 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 05:07:31,751 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:07:31,751 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 05:29:47,605 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:29:47,607 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 05:29:47,609 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:29:47,609 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 05:33:00,481 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:33:00,489 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 05:33:00,490 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:33:00,491 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
+2019-11-27 05:33:21,018 [Worker-25: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-27 05:33:21,306 [Worker-25: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-27 05:33:21,626 [Worker-25: Launching RunEdgeDetection] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/common: elmir.sut.project:common:1.0-SNAPSHOT with classifier null to /common/target/classes
+2019-11-27 05:36:54,557 [Worker-29: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:36:54,566 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2019-11-27 05:36:54,569 [Worker-29: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-27 05:36:54,570 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/elmirsut/Downloads/Programmin3-Project-Elmir-Sut/EdgeDetection/src/test/resources
