@@ -103,11 +103,20 @@ public class EdgeDetectionUI {
             }
         });
 
+        //here is where whole program is activated
         detect.addActionListener(event -> {
             try {
+            	//IMPORTANT
+            	//here I need to chop picture into pieces and bring it back together
+            	
+            	//uploaded picture
                 BufferedImage bufferedImage = ImageIO.read(new File(sourceImage.getFilePath()));
+                
+                //I need to chop it in an array and 
+                
                 File convolvedFile = edgeDetection.detectEdges(bufferedImage, (String) filterType.getSelectedItem());
                 destImage.setImage(convolvedFile.getAbsolutePath());
+                //here I need to see whether it shows the picture, it does show.
             } catch (IOException e) {
                 //log.error("", e);
                 throw new RuntimeException(e);
