@@ -70,23 +70,31 @@ public class ConvolutionParallel {
         
         double[][] output = new double[width][height];//new matrix image accumulator
         
+        System.out.println("WIDTH: "+ width + "_______________HEIGHT: "  + height);
+        System.out.println("WIDTH: "+ smallWidth + "_______________HEIGHT: "  + smallHeight);
+
+        
         fill2DMatrix(output, height, width); //put in zeros
         
         //here we need to fill in each cell
         int cores = Runtime.getRuntime().availableProcessors();
-        int slice = height/cores;
-        System.out.println("Available cores: "+ slice);
-        //for (int t=0; t<4; t++) {
+        int slice = height/cores; //actually width
+        System.out.println("SLICE SIZE: "+ slice);
+        System.out.println("SMALL WIDTH: "+ smallWidth); //reversed
+        System.out.println("SMALL HEIGHT: "+ smallHeight); //reversed
+        slice=slice-3;
+       
         //************************PART TO EACH THREAD****************//
         for (int i = 0; i < smallWidth; ++i) { //filling in the values starting from beginning
-            for (int j = 0; j < smallHeight; ++j) {
-                output[i+1][j+1] = singlePixelConvolution(input, i, j, kernel,
+        	for (int t=0; t<cores; t++) {
+            for (int j = (t*slice); j < ((t+1)*slice+((cores+kernelWidth)%(t+1)+1))- kernelWidth + 1 ; ++j) {
+                output[i+1][j+1] += singlePixelConvolution(input, i, j, kernel,
                         kernelWidth, kernelHeight); //calculating every single pixel and saving it
                 
             }
         }
         //************************PART TO EACH THREAD****************//
-       // }
+        }
         
         
        
