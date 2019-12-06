@@ -5,7 +5,13 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 //IMPORTANT!!!
 //OUTLINE
 //need to chop every picture in small pieces 
@@ -16,7 +22,10 @@ import java.util.HashMap;
 
 
 public class EdgeDetection {
-
+	int availableThreads = Runtime.getRuntime().availableProcessors();
+	//int availableThreads = 2;
+	
+	
     public static final String HORIZONTAL_FILTER = "Horizontal Filter";
     public static final String VERTICAL_FILTER = "Vertical Filter";
 
@@ -73,6 +82,7 @@ public class EdgeDetection {
     }
 
     private double[][] applyConvolution(int width, int height, double[][][] image, double[][] filter) {
+    long current = System.currentTimeMillis();
         Convolution convolution = new Convolution();
         double[][] redConv = convolution.convolutionFinal(image[0], height, width, filter, 3, 3);
         double[][] greenConv = convolution.convolutionFinal(image[1], height, width, filter, 3, 3);
@@ -85,10 +95,130 @@ public class EdgeDetection {
                 finalConv[i][j] = redConv[i][j] + greenConv[i][j] + blueConv[i][j];
             }
         }
+        //System.out.println("Available threads ..." + availableThreads);
+    long end = System.currentTimeMillis();
+    System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
         return finalConv;
     }
     
-
+    
+//    
+//    private double[][] applyConvolution(int width, int height, double[][][] image, double[][] filter) {
+//    	long current = System.currentTimeMillis();
+//    	CountDownLatch latch = new CountDownLatch(availableThreads);
+//    	ExecutorService executor = Executors.newFixedThreadPool(availableThreads);
+//   	 
+//       
+//        //RED PARALLEL 
+//        Parallel parallel = new Parallel(image[0], height, width, filter, 3, 3, latch);
+//        for (int i = 0; i < availableThreads; i++) {//worker.run is called 2 (threads started) times by two threads
+//            executor.submit(parallel);
+//        }
+//        executor.shutdown(); 
+//        
+//        
+//            try {
+//				executor.awaitTermination(1, TimeUnit.DAYS);
+//				System.out.println(" FINISHED THREAD" );
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//          
+//         
+//        double[][] redConv =parallel.returnOutput();
+//        
+//        executor = Executors.newFixedThreadPool(availableThreads);
+//      //GREEN PARALLEL 
+//         parallel = new Parallel(image[1], height, width, filter, 3, 3, latch);
+//        for (int i = 0; i < availableThreads; i++) {//worker.run is called 2 (threads started) times by two threads
+//            executor.submit(parallel);
+//        }
+//        executor.shutdown(); 
+//        
+//        
+//            try {
+//				executor.awaitTermination(1, TimeUnit.DAYS);
+//				System.out.println(" FINISHED THREAD" );
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//          
+//         
+//        double[][] greenConv =parallel.returnOutput();
+//        
+//        executor = Executors.newFixedThreadPool(availableThreads);
+//      //BLUE PARALLEL 
+//        parallel = new Parallel(image[2], height, width, filter, 3, 3, latch);
+//       for (int i = 0; i < availableThreads; i++) {//worker.run is called 2 (threads started) times by two threads
+//           executor.submit(parallel);
+//       }
+//       executor.shutdown(); 
+//       
+//       
+//           try {
+//				executor.awaitTermination(1, TimeUnit.DAYS);
+//				System.out.println(" FINISHED THREAD" );
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//         
+//        
+//       double[][] blueConv =parallel.returnOutput();
+//        
+//        
+//        
+//        double[][] finalConv = new double[redConv.length][redConv[0].length];
+//        //here we create gray version of convolution
+//        
+//        for (int i = 0; i < redConv.length; i++) {
+//            for (int j = 0; j < redConv[i].length; j++) {
+//                finalConv[i][j] = redConv[i][j] + greenConv[i][j] + blueConv[i][j];
+//            }
+//        }
+//        //System.out.println("Available threads ..." + availableThreads);
+//        long end = System.currentTimeMillis();
+//        System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
+//        
+//        return finalConv;
+//    }
+    
+    /***
+     * 
+     * 
+     * ?????????PROBA??????
+     * 
+     * */
+    
+//    private double[][] applyConvolution(int width, int height, double[][][] image, double[][] filter) {
+//    	ArrayList<ArrayList<ArrayList<Integer>>> imageArrayList = new ArrayList <ArrayList<ArrayList<Integer>>>(Arrays.asList(image));
+//    	System.out.println(Arrays.toString(image));
+//    	
+//
+//
+////        ConvolutionParallel convolution = new ConvolutionParallel();
+////        double[][] redConv = convolution.sliceImage(image[0], height, width, filter, 3, 3);
+////        double[][] greenConv = convolution.sliceImage(image[1], height, width, filter, 3, 3);
+////        double[][] blueConv = convolution.sliceImage(image[2], height, width, filter, 3, 3);
+////        double[][] finalConv = new double[redConv.length][redConv[0].length];
+////        //here we create gray version of convolution
+////        
+////        for (int i = 0; i < redConv.length; i++) {
+////            for (int j = 0; j < redConv[i].length; j++) {
+////                finalConv[i][j] = redConv[i][j] + greenConv[i][j] + blueConv[i][j];
+////            }
+////        }
+////        return finalConv;
+//    	return null;
+//    }
+//    
+//    
+    
+    
+    
+    /*************** */
     private File createImageFromConvolutionMatrix(BufferedImage originalImage, double[][] imageRGB) throws IOException {
     	//here we just get width height in order to be same size, this is empty picture with proportions as original
         BufferedImage writeBackImage = new BufferedImage(originalImage.getWidth(), originalImage.getHeight(), BufferedImage.TYPE_INT_RGB);

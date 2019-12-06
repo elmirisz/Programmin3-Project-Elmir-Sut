@@ -1,40 +1,116 @@
 package elmir.sut.project;
 
-import java.util.concurrent.atomic.AtomicIntegerArray;
 
-/**
- * Handles the convolution operation with a filter
+import java.util.Arrays;
+
+public class ConvolutionParallel {
+	
+	
+	
+	
+	
+/** 
+ * Notice : I will use only grey scale photo, colors will be converted 
+ * 
  */
 
-//Here we need to implement parallel version of convolution
-public class ConvolutionParallel  extends Thread{
+    /**
+     * Takes an image (grey-levels) and a kernel and a position,
+     * applies the convolution at that position and returns the
+     * new pixel value.
+     */
 	
-	private int row;
-	   private int column;
-	   private AtomicIntegerArray matrixA;
-	   private AtomicIntegerArray[] matrixB;
-	   private AtomicIntegerArray[] product;
+	//method which fills matrix with instance values 
+	public static void fill2DMatrix (double[][] matrix, int height, int width) {
+		for (int i = 0; i < width; ++i) {  //for each cell we will set value to be zero 0
+            for (int j = 0; j < height; ++j) {
+                matrix[i][j] = 0;
+            }
+        }
+		
+	}
+	//method that calculates calue for each pixel using convolution formula
+    public static double singlePixelConvolution(double[][] input, //part of the picture we select
+                                                int x, int y, //to get current part of the picture to be convoluted
+                                                double[][] k, //actual kernel matrix
+                                                int kernelWidth, //kernel size used in loop
+                                                int kernelHeight) {
+        double output = 0; //accumulator
+        for (int i = 0; i < kernelWidth; ++i) {
+            for (int j = 0; j < kernelHeight; ++j) {
+                output = output + (input[x + i][y + j] * k[i][j]); //we traverse through kernel and multiply
+            }
+        }
+        return output;
+    }
 
-	   public  ConvolutionParallel(final int row,
-			   					   final int column,
-			   					   final AtomicIntegerArray matrixA, 
-			   					   final AtomicIntegerArray[] matrixB,
-			   					   final AtomicIntegerArray[] product) {
-	      this.row = row;
-	      this.column = column;
-	      this.matrixA = matrixA;
-	      this.matrixB = matrixB;
-	      this.product = product;
-	   }
-
-	   public void run() {
-	      int value = 0;
-	      for (int i = 0; i < matrixA.length(); i++) {
-	         value = value + (matrixA.get(i) * matrixB[i].get(column));
-	      }
-	      product[row].set(column, value);
-	   }
-	
-	
-}
     
+    /** 
+     * input[x][y]  position of original pixel 
+     * input[x + i][y + j] taking value of neighboring  pixels
+     *  * k[i][j] multyplying with kernel position value
+     * 
+     * return output returns sum of all these multiplications 
+     * 
+     * */
+    
+    
+
+   //
+    public static double[][] convolutionFinal(double[][] input,
+                                           int width, int height,
+                                           double[][] kernel,
+                                           int kernelWidth,
+                                           int kernelHeight) {
+    	long currentTime = System.currentTimeMillis();
+		
+    	
+        int smallWidth = width - kernelWidth + 1;//this is used so we do not come till edge of picture without sufficent pixels
+        int smallHeight = height - kernelHeight + 1; //so we convolute last kernel sized matrix of the picture
+        
+        double[][] output = new double[width][height];//new matrix image accumulator
+        
+        fill2DMatrix(output, height, width); //put in zeros
+        
+        //here we need to fill in each cell
+        int cores = Runtime.getRuntime().availableProcessors();
+        int slice = height/cores;
+        System.out.println("Available cores: "+ slice);
+        //for (int t=0; t<4; t++) {
+        //************************PART TO EACH THREAD****************//
+        for (int i = 0; i < smallWidth; ++i) { //filling in the values starting from beginning
+            for (int j = 0; j < smallHeight; ++j) {
+                output[i+1][j+1] = singlePixelConvolution(input, i, j, kernel,
+                        kernelWidth, kernelHeight); //calculating every single pixel and saving it
+                
+            }
+        }
+        //************************PART TO EACH THREAD****************//
+       // }
+        
+        
+       
+        System.out.println("Available cores: "+ cores);
+        
+        
+        System.out.println("Size of output: " + output.length +  "; "+output[0].length);
+       //radi print2D(output);
+        
+        long endTime3 = System.currentTimeMillis();
+		System.out.println("Time it took before finishing: " + (endTime3-currentTime));
+        
+        return output;
+    }
+
+//    public static void print2D(double mat[][]) 
+//    { 
+//        // Loop through all rows 
+//        for (double[] row : mat) 
+//  
+//            // converting each row as string 
+//            // and then printing in a separate line 
+//            System.out.println(Arrays.toString(row)); 
+//    } 
+
+   
+}

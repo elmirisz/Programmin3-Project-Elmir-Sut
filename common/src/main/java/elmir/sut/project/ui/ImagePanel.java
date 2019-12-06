@@ -15,7 +15,7 @@ import java.io.InputStream;
 
 public class ImagePanel extends JPanel {
 
-    public static final int DEFAULT_WIDTH = 400;
+    public static final int DEFAULT_WIDTH = 1000;
     public static final int DEFAULT_HEIGHT = 400;
 
     public final int scaleWidth;

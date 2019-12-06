@@ -28,7 +28,9 @@ public class EdgeDetectionUI {
     private final ImagePanel destImage = new ImagePanel(500, 510);
     private final JPanel mainPanel;
     private final EdgeDetection edgeDetection;
-    
+    BufferedImage imageBuffer;
+    int availableThreads = Runtime.getRuntime().availableProcessors();
+    File output;
 
 
     public EdgeDetectionUI() throws IOException {
@@ -41,7 +43,7 @@ public class EdgeDetectionUI {
         mainPanel = new JPanel(new GridLayout(1, 2));
         mainPanel.add(sourceImage); //at the beginning will be same picture
         mainPanel.add(destImage); // 
-
+       
         
         
         JPanel northPanel = fillNorthPanel();
@@ -86,7 +88,7 @@ public class EdgeDetectionUI {
         chooseButton.addActionListener(event -> {
         	//here we need get absolute path 
         	String basePath = new File("").getAbsolutePath();
-            System.out.println(basePath + " EdgeDetectionUI");
+            
             
             //here we set to choose directly from our resources
             JFileChooser chooser = new JFileChooser();
@@ -94,12 +96,44 @@ public class EdgeDetectionUI {
             int action = chooser.showOpenDialog(null);
             if (action == JFileChooser.APPROVE_OPTION) {
                 try {
+                	//i have created this in order to trim file
+                	output=new File(chooser.getSelectedFile().getAbsolutePath());
+                	imageBuffer =ImageIO.read(new File( chooser.getSelectedFile().getAbsolutePath()));
+                	
+                	//rows must be divisible with thread number
+                	
+                	int moduleHeight = imageBuffer.getHeight()%availableThreads;
+                	//replace fixed values with ones related to threads
+                	// System.out.println("MODULE!!!!!!!MODULE" + moduleWidth);
+                	 
+                    imageBuffer=cropImage(imageBuffer,imageBuffer.getWidth(),imageBuffer.getHeight()-moduleHeight);
+                    System.out.println("CROP CROP AFTER :" + imageBuffer.getWidth());
+                    moduleHeight = imageBuffer.getWidth()%availableThreads;
+                    //System.out.println("MODULE!!!!!!!MODULE" + moduleWidth);
+               	 
+                    
+                    //File outputFile = new File( basePath + "/edgesTmp.png");
+                    //ImageIO.write(imageBuffer, "png", outputFile);
+                    
+                	ImageIO.write(imageBuffer,"png", output);
+                	
                     sourceImage.setImage(chooser.getSelectedFile().getAbsolutePath());
+                	
+                	 //System.out.println("IMPORTANT!!!!!!!Name Image:" + sourceImage.getName());
+                	 
+                	// String basePathUI = new File("").getAbsolutePath();
+                     //System.out.println(basePathUI);
+                    
+                   
+                    //System.out.println("IMPORTANT!!!!!!!" + chooser.getSelectedFile().getAbsolutePath());
+                    
                     mainPanel.updateUI();
+                    //System.out.println("Something: " +  sourceImage);
                 } catch (IOException e) {
                     //log.error("", e);
                     throw new RuntimeException(e);
                 }
+                
             }
         });
 
@@ -111,7 +145,7 @@ public class EdgeDetectionUI {
             	
             	//uploaded picture
                 BufferedImage bufferedImage = ImageIO.read(new File(sourceImage.getFilePath()));
-                
+               
                 //I need to chop it in an array and 
                 
                 File convolvedFile = edgeDetection.detectEdges(bufferedImage, (String) filterType.getSelectedItem());
@@ -139,5 +173,11 @@ public class EdgeDetectionUI {
         });
         return mainFrame;
     }
+    
+    private BufferedImage cropImage(BufferedImage src, int width, int height) {
+        BufferedImage dest = src.getSubimage(0, 0, width, height);
+       // System.out.println("CROP CROP CROP :" + dest.getWidth());
+        return dest; 
+     }
 
 }
