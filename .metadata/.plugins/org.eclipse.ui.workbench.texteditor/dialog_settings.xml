@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Convolution"/>
+		<item key="selection" value="basePath"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="basePath"/>
+			<item value="write"/>
+			<item value="buffered"/>
+			<item value="applyConvolution"/>
+			<item value="EdgeDetection"/>
+			<item value="convolution2DPadded"/>
 			<item value="convolution"/>
 			<item value="update"/>
 			<item value="getDefaultImage();"/>
 			<item value="log.error(&quot;&quot;, e);"/>
 		</list>
 		<list key="replacehistory">
+			<item value="convolution"/>
 			<item value="//log.error(&quot;&quot;, e);"/>
 		</list>
 	</section>

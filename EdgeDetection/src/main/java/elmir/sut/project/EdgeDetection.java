@@ -81,90 +81,48 @@ public class EdgeDetection {
         return image;
     }
 
-//    private double[][] applyConvolution(int width, int height, double[][][] image, double[][] filter) {
-//    long current = System.currentTimeMillis();
-//        Convolution convolution = new Convolution();
-//        double[][] redConv = convolution.convolutionFinal(image[0], height, width, filter, 3, 3);
-//        double[][] greenConv = convolution.convolutionFinal(image[1], height, width, filter, 3, 3);
-//        double[][] blueConv = convolution.convolutionFinal(image[2], height, width, filter, 3, 3);
-//        double[][] finalConv = new double[redConv.length][redConv[0].length];
-//        //here we create gray version of convolution
-//        
-//        for (int i = 0; i < redConv.length; i++) {
-//            for (int j = 0; j < redConv[i].length; j++) {
-//                finalConv[i][j] = redConv[i][j] + greenConv[i][j] + blueConv[i][j];
-//            }
-//        }
-//        //System.out.println("Available threads ..." + availableThreads);
-//    long end = System.currentTimeMillis();
-//    System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
-//        return finalConv;
-//    }
-    
-    
-    
     private double[][] applyConvolution(int width, int height, double[][][] image, double[][] filter) {
+    long current = System.currentTimeMillis();
+        Convolution convolution = new Convolution();
+        double[][] redConv = convolution.convolutionFinal(image[0], height, width, filter, 3, 3);
+        double[][] greenConv = convolution.convolutionFinal(image[1], height, width, filter, 3, 3);
+        double[][] blueConv = convolution.convolutionFinal(image[2], height, width, filter, 3, 3);
+        double[][] finalConv = new double[redConv.length][redConv[0].length];
+        //here we create gray version of convolution
+        
+        for (int i = 0; i < redConv.length; i++) {
+            for (int j = 0; j < redConv[i].length; j++) {
+                finalConv[i][j] = redConv[i][j] + greenConv[i][j] + blueConv[i][j];
+            }
+        }
+        //System.out.println("Available threads ..." + availableThreads);
+    long end = System.currentTimeMillis();
+    System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
+        return finalConv;
+    }
+    
+    
+    
+    private double[][] applyConvolutionParallel(int width, int height, double[][][] image, double[][] filter) {
     	long current = System.currentTimeMillis();
     	CountDownLatch latch = new CountDownLatch(availableThreads);
-    	ExecutorService executor = Executors.newFixedThreadPool(availableThreads);
+//    	ExecutorService executor = Executors.newFixedThreadPool(availableThreads);
    	 
        
         //RED PARALLEL 
-        Parallel parallel = new Parallel(image[0], height, width, filter, 3, 3, latch, availableThreads);
-        for (int i = 0; i < availableThreads; i++) {//worker.run is called 2 (threads started) times by two threads
-            executor.submit(parallel);
-        }
-        executor.shutdown(); 
-        
-        
-            try {
-				executor.awaitTermination(1, TimeUnit.DAYS);
-				System.out.println(" FINISHED THREAD" );
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-          
-         
+        Parallel parallel = new Parallel(image[0], height, width, filter, 3, 3, latch, availableThreads); 
         double[][] redConv =parallel.returnOutput();
         
-        executor = Executors.newFixedThreadPool(availableThreads);
+       
       //GREEN PARALLEL 
-         parallel = new Parallel(image[1], height, width, filter, 3, 3, latch, availableThreads);
-        for (int i = 0; i < availableThreads; i++) {//worker.run is called 2 (threads started) times by two threads
-            executor.submit(parallel);
-        }
-        executor.shutdown(); 
-        
-        
-            try {
-				executor.awaitTermination(1, TimeUnit.DAYS);
-				System.out.println(" FINISHED THREAD" );
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-          
-         
+         parallel = new Parallel(image[1], height, width, filter, 3, 3, latch, availableThreads);    
         double[][] greenConv =parallel.returnOutput();
         
-        executor = Executors.newFixedThreadPool(availableThreads);
-      //BLUE PARALLEL 
+
+//      //BLUE PARALLEL 
         parallel = new Parallel(image[2], height, width, filter, 3, 3, latch, availableThreads);
-       for (int i = 0; i < availableThreads; i++) {//worker.run is called 2 (threads started) times by two threads
-           executor.submit(parallel);
-       }
-       executor.shutdown(); 
-       
-       
-           try {
-				executor.awaitTermination(1, TimeUnit.DAYS);
-				System.out.println(" FINISHED THREAD" );
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-         
+//       
+//         
         
        double[][] blueConv =parallel.returnOutput();
         

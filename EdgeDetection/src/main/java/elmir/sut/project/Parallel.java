@@ -1,12 +1,16 @@
 package elmir.sut.project;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 //Parallel implementation
 
 
 	
-	class Parallel implements Runnable{
+	class Parallel  {
 		
 		Object a;
 		CountDownLatch latch;
@@ -19,8 +23,15 @@ import java.util.concurrent.CountDownLatch;
         int smallWidth = width - kernelWidth + 1;//this is used so we do not come till edge of picture without sufficent pixels
         int smallHeight = height - kernelHeight + 1; 
         double[][] output;
-        int cores ;
+       int cores =Runtime.getRuntime().availableProcessors();
+        //int cores=1;
         int slice ; //actually width
+        
+        int checker = 0;
+        
+        ExecutorService executor = Executors.newFixedThreadPool(cores);
+        
+        
       //NEED TO FIX DUPLICATIONS!!!
         
         double[][] returnOutput() {
@@ -62,38 +73,89 @@ import java.util.concurrent.CountDownLatch;
                     output[i][j] = 0;
                 }
             }
+        	
     		smallWidth = width - kernelWidth + 1;
     		smallHeight = height - kernelHeight + 1;
     		
     		slice = height/cores;
             slice=slice-3;
-        	
-        	
-        }
-        
-        
-        
-        
-	@Override
-	public void run() {
-		
-		for (int t=0; t<cores; t++) {
-			latch.countDown();
-		//************************PART TO EACH THREAD****************//
-        for (int i = 0; i < smallWidth; ++i) { //filling in the values starting from beginning
-        	
-        	
-            for (int j = (t*slice); j < ((t+1)*slice+((cores+kernelWidth)%(t+1)+1))- kernelWidth + 1 ; ++j) {
-                output[i+1][j+1] += singlePixelConvolution(input, i, j, kernel,
-                        kernelWidth, kernelHeight); //calculating every single pixel and saving it
-                
+           // System.out.println("Output : " + output[1][1]);
+            
+            for (int t=0; t<cores; t++) {
+    			latch.countDown();
+    			//System.out.println("Latch : " + latch);
+    			
+    			
+    			executor.submit(new Multiply(t));
+    			
+    			
+    			System.out.println("Thread : " + Thread.currentThread().getId());
+    			
+    			 
+    			
+            //************************PART TO EACH THREAD****************//
             }
+            
+            executor.shutdown(); 
+	        
+	        
+            try {
+				executor.awaitTermination(1, TimeUnit.DAYS);
+				System.out.println(" FINISHED THREAD IN RUNNABLE" );
+				checker+=100;
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            System.out.println("Checker : " + checker);
         }
-        //************************PART TO EACH THREAD****************//
-        }
+        
+        
+        
+        
+	
+	public void start() {
+		
+		
         
 
 		
 	}
-}
+	
+	
+	public class Multiply implements Runnable {
+		
+		int t;
+//		int smallWidth;
+//		int slice;
+		
+		
+		//setter
+		//we need to know loop integer at the moment(t), we need smallwidth, slice value
+		Multiply(int t){
+			this.t=t;
+			
+			
+		}
+		
+		@Override
+		public void run() {
+			
+			for (int i = 0; i < smallWidth; ++i) { //filling in the values starting from beginning
+	        	
+	        	//when t=3 it does not reach end
+	            for (int j = (t*slice); j < ((t+1)*(slice)+2*t); ++j) {
+	                output[i+1][j+1] = singlePixelConvolution(input, i, j, kernel,
+	                        kernelWidth, kernelHeight); //calculating every single pixel and saving it
+	                
+	            }
+	        }
+			
+		}
+		
+		
+	}
+	
+	}
+
 
