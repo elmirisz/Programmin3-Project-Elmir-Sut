@@ -78,7 +78,7 @@ import java.util.concurrent.TimeUnit;
     		smallHeight = height - kernelHeight + 1;
     		
     		slice = height/cores;
-            slice=slice-3;
+            slice=slice-2;
            // System.out.println("Output : " + output[1][1]);
             
             for (int t=0; t<cores; t++) {

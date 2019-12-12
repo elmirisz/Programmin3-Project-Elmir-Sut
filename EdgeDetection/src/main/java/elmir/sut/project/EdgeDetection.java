@@ -19,11 +19,22 @@ import java.util.concurrent.TimeUnit;
 //have them saved in file array
 //bring file array back in one piece
 //save that image and show it
-
+import mpi.Comm;
+import mpi.MPI;
 
 public class EdgeDetection {
 	int availableThreads = Runtime.getRuntime().availableProcessors();
 	//int availableThreads = 2;
+	/**
+	Distributed
+	
+	*/
+	public static int rootProcessorRank = 0;
+	public static int currentProcessorRank;
+	public static int numberOfProcessors;
+	
+	public static Comm comunicator;
+	
 	
 	
     public static final String HORIZONTAL_FILTER = "Horizontal Filter";
