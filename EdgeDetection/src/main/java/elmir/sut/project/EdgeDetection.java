@@ -58,7 +58,7 @@ public class EdgeDetection {
         
         double[][] filter = filterMap.get(selectedFilter);//kernel
         
-        double[][] convolvedPixels = applyConvolution(bufferedImage.getWidth(),
+        double[][] convolvedPixels = applyConvolutionParallel(bufferedImage.getWidth(),
                 bufferedImage.getHeight(), image, filter); //to start process
         
         return createImageFromConvolutionMatrix(bufferedImage, convolvedPixels); 

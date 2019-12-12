@@ -86,10 +86,10 @@ import java.util.concurrent.TimeUnit;
     			//System.out.println("Latch : " + latch);
     			
     			
-    			executor.submit(new Multiply(t));
+    			executor.execute(new Multiply(t));
     			
     			
-    			System.out.println("Thread : " + Thread.currentThread().getId());
+    			
     			
     			 
     			
@@ -140,6 +140,8 @@ import java.util.concurrent.TimeUnit;
 		
 		@Override
 		public void run() {
+			//we can see names of our threads performing 
+			System.out.println("Thread : " + Thread.currentThread().getName());
 			
 			for (int i = 0; i < smallWidth; ++i) { //filling in the values starting from beginning
 	        	
@@ -158,4 +160,10 @@ import java.util.concurrent.TimeUnit;
 	
 	}
 
+	
+	
+	
+	
+	
+	
 
