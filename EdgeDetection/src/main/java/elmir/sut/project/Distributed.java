@@ -35,6 +35,7 @@ public class Distributed {
     int smallWidth = width - kernelWidth + 1;//this is used so we do not come till edge of picture without sufficent pixels
     int smallHeight = height - kernelHeight + 1; 
     double[][] output;
+    double[] arrayImage;
     
     //setter
     Distributed(double[][] input,
@@ -53,6 +54,8 @@ public class Distributed {
 		System.out.println("DISTRIBUTED:" + input.length + ", " + width+ ", " + height+ ", "+ kernel+ ", " + kernelWidth+ ", " + kernelHeight);
 		
 		output = new double[width][height];
+		arrayImage = convertMatrixToArray(input); //WORKS
+		System.out.println("ARRAY:" + arrayImage[0]);
 		
 }
     
@@ -73,6 +76,18 @@ public class Distributed {
 	    //how much data is given to each non root processor
 	   int partition = initPartition;
 	     
+	   /*********************************************************************************************************************
+	    * 
+	    * 
+	    * 
+	    * HERE WE NEED TO IMPLEMENT LOOP COMMUNICATION FOR EVERY SINGLE ROW TO BE SENT, SAVED AND PROCCESED THEN RETURNED
+	    * 
+	    * 
+	    * 
+	    * 
+	    * */
+	   
+	   
 	   
 	   
 	   for (int i = 1; i<numberOfProcessors; i++) {
@@ -243,6 +258,20 @@ public class Distributed {
 		return output;
 	}
 	
+	//taken from my Matrix project
+	static double[] convertMatrixToArray (double[][]matrix) {
+		  double[] array = new double[matrix.length*matrix[0].length];
+		  int m = matrix[0].length;
+		  for (int i = 0; i < matrix.length; i++) {
+				for (int j = 0; j < matrix[0].length; j++) {
+					array[ i*m + j ] =	matrix[i][j];
+					
+				}
+				
+			} 
+		return array;
+		  
+	  }
 	
 
 }
