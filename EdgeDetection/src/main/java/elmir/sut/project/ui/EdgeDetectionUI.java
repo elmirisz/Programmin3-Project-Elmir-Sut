@@ -148,8 +148,15 @@ public class EdgeDetectionUI {
                
                 //I need to chop it in an array and 
                 
-                File convolvedFile = edgeDetection.detectEdges(bufferedImage, (String) filterType.getSelectedItem());
-                destImage.setImage(convolvedFile.getAbsolutePath());
+                File convolvedFile;
+				try {
+					convolvedFile = edgeDetection.detectEdges(bufferedImage, (String) filterType.getSelectedItem());
+					destImage.setImage(convolvedFile.getAbsolutePath());
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                
                 //here I need to see whether it shows the picture, it does show.
             } catch (IOException e) {
                 //log.error("", e);
