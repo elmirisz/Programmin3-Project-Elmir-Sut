@@ -25,10 +25,7 @@ import mpi.MPI;
 public class EdgeDetection {
 	int availableThreads = Runtime.getRuntime().availableProcessors();
 	//int availableThreads = 2;
-	/**
-	Distributed
 	
-	*/
 	public static int rootProcessorRank = 0;
 	public static int currentProcessorRank;
 	public static int numberOfProcessors;
@@ -69,13 +66,14 @@ public class EdgeDetection {
         
         double[][] filter = filterMap.get(selectedFilter);//kernel
         
-        comunicator = MPI.COMM_WORLD;
-        numberOfProcessors = comunicator.Size();
+       // numberOfProcessors = comunicator.Size();
         
-        double[][] convolvedPixels = applyConvolutionArray(bufferedImage.getWidth(),
+        double[][] convolvedPixels = applyConvolutionDistributed(bufferedImage.getWidth(),
                 bufferedImage.getHeight(), image, filter); //to start process
         
         return createImageFromConvolutionMatrix(bufferedImage, convolvedPixels); 
+        
+        
     }
     
 
@@ -251,7 +249,7 @@ public class EdgeDetection {
         }
         //System.out.println("Available threads ..." + availableThreads);
         long end = System.currentTimeMillis();
-        System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
+        //System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
         
         return finalConv;
     }
@@ -275,11 +273,12 @@ public class EdgeDetection {
         //my experimenting part
         
         String basePath = new File("").getAbsolutePath();
-        System.out.println(basePath);
+       // System.out.println(basePath);
+       
 
 //        String path = new File("src/main/resources/conf.properties")
 //                                                               .getAbsolutePath();
-//        System.out.println(path);
+       // System.out.println(basePath);
         
         
         

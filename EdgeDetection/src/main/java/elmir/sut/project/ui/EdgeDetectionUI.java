@@ -27,14 +27,15 @@ public class EdgeDetectionUI {
     private final ImagePanel sourceImage = new ImagePanel(500, 510);
     private final ImagePanel destImage = new ImagePanel(500, 510);
     private final JPanel mainPanel;
+    
     private final EdgeDetection edgeDetection;
     BufferedImage imageBuffer;
     int availableThreads = Runtime.getRuntime().availableProcessors();
     File output;
 
-
+    
     public EdgeDetectionUI() throws IOException {
-
+    	
     	//here we create instance of Edge detection to get picture and to be able to convolute it
         edgeDetection = new EdgeDetection();
         
@@ -51,10 +52,12 @@ public class EdgeDetectionUI {
         mainFrame.add(northPanel, BorderLayout.NORTH);
         mainFrame.add(mainPanel, BorderLayout.CENTER);
         mainFrame.setVisible(true);
+        
     }
 //___________________________________________________________came until here
     //part with buttons
     private JPanel fillNorthPanel() {
+    	
     	
     	//button to select image to be convoluted
         JButton chooseButton = new JButton("Select Image");
@@ -88,6 +91,7 @@ public class EdgeDetectionUI {
         chooseButton.addActionListener(event -> {
         	//here we need get absolute path 
         	String basePath = new File("").getAbsolutePath();
+        	
             
             
             //here we set to choose directly from our resources
@@ -107,7 +111,7 @@ public class EdgeDetectionUI {
                 	// System.out.println("MODULE!!!!!!!MODULE" + moduleWidth);
                 	 
                     imageBuffer=cropImage(imageBuffer,imageBuffer.getWidth(),imageBuffer.getHeight()-moduleHeight);
-                    System.out.println("CROP CROP AFTER :" + imageBuffer.getWidth());
+                    //System.out.println("CROP CROP AFTER :" + imageBuffer.getWidth());
                     moduleHeight = imageBuffer.getWidth()%availableThreads;
                     //System.out.println("MODULE!!!!!!!MODULE" + moduleWidth);
                	 
@@ -183,7 +187,7 @@ public class EdgeDetectionUI {
     
     private BufferedImage cropImage(BufferedImage src, int width, int height) {
         BufferedImage dest = src.getSubimage(0, 0, width, height);
-       // System.out.println("CROP CROP CROP :" + dest.getWidth());
+       System.out.println("CROP CROP CROP :" + dest.getWidth());
         return dest; 
      }
 
