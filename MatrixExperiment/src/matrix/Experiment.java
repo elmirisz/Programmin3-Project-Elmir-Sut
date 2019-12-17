@@ -67,8 +67,9 @@ public class Experiment {
 		  * */
 		
 		//test arrayconvolution
+		double[] kernelArray = convertMatrixToArray(kernel);
 		
-		double[][] convoluted = convolutionFinalArray(matrix, matrix.length, matrix[0].length, kernel, 3, 3);
+		double[][] convoluted = convolutionFinalArray(array, matrix.length, matrix[0].length, kernelArray, 3, 3);
 		printMatrix(convoluted);
 		
 		// ne valja algoritam, pogresni brojevi 
@@ -141,7 +142,7 @@ public class Experiment {
 	  //method that calculates calue for each pixel using convolution formula
 	    public static double singlePixelConvolutionArray(double[] input, //part of the picture we select
 	                                                int x, int y, //to get current part of the picture to be convoluted
-	                                                double[][] k, //actual kernel matrix
+	                                                double[] k, //actual kernel matrix
 	                                                int kernelWidth, //kernel size used in loop
 	                                                int kernelHeight, int height) {
 	    	
@@ -150,16 +151,16 @@ public class Experiment {
 	        for (int i = 0; i < kernelWidth; ++i) {
 	            for (int j = 0; j < kernelHeight; ++j) {
 	            	//x should be width or column number
-	                output = output + (input[(x+i)*height+(j+y)] * k[i][j]); //we traverse through kernel and multiply              
+	                output = output + (input[(x+i)*height+(j+y)] * k[i*kernelWidth +j]); //we traverse through kernel and multiply              
 	            }
 	        }
 	        return output;
 	    }
 
 	   // /we will try to convert it to single array conversion
-	    public static double[][] convolutionFinalArray(double[][] input,
+	    public static double[][] convolutionFinalArray(double[] input,
 	                                           int width, int height,
-	                                           double[][] kernel,
+	                                           double[] kernel,
 	                                           int kernelWidth,
 	                                           int kernelHeight) {	
 		
@@ -168,10 +169,10 @@ public class Experiment {
 	               
 	       
 	        double[] outputArray = new double[width*height];
-	        double[] inputArray = convertMatrixToArray(input);
+	        double[] inputArray = input;
 	    //  matrix[i][j] = array [i*width + j]
 	        System.out.println("INPUT MATRIX: width/height   "  +width+"/"+height);
-	        System.out.println("INPUT MATRIX: width/height   "  +input.length+"/"+input[0].length);
+	       // System.out.println("INPUT MATRIX: width/height   "  +input.length+"/"+input[0].length);
 	       // fill2DMatrix(output, height, width); //put in zeros
 	        
 	        //here we need to fill in each cell
@@ -183,7 +184,7 @@ public class Experiment {
 	            }
 	        }
 	        
-	        System.out.println("Matrix number of elements: " + (input.length*input[0].length));
+	       // System.out.println("Matrix number of elements: " + (input.length*input[0].length));
 	        System.out.println("Array number of elements: " + (outputArray.length));
 	        return convertArrayToMatrix(outputArray, width, height);
 	    }

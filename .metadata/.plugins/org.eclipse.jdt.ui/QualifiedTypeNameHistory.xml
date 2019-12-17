@@ -12,4 +12,8 @@
     <fullyQualifiedTypeName name="mpi.MPI"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="elmir.sut.project.ui.ImagePanel"/>
+    <fullyQualifiedTypeName name="mpi.Comm"/>
+    <fullyQualifiedTypeName name="elmir.sut.project.ui.EdgeDetectionUI"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 </qualifiedTypeNameHistroy>

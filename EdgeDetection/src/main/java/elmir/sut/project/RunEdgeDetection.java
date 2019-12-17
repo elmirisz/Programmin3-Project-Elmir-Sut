@@ -2,6 +2,8 @@ package elmir.sut.project;
 
 import java.io.IOException;
 
+import javax.swing.JFrame;
+
 import elmir.sut.project.ui.EdgeDetectionUI;
 import mpi.Comm;
 import mpi.MPI;
@@ -48,14 +50,19 @@ public class RunEdgeDetection {
 		
 		System.out.println("RUN EDGE DETECTION: "+currentProcessorRank +" == "+ rootProcessorRank);
 		if (currentProcessorRank == rootProcessorRank) {
-			new EdgeDetectionUI();
+			EdgeDetectionUI ui = new EdgeDetectionUI();
+			//ui.mainFrame.setVisible(true);
+//			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			
+//			ui.mainFrame.setVisible(true);
+//			ui.mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			System.out.println(currentProcessorRank +" == "+ rootProcessorRank);
 			
 		}
 		else {
-			System.out.println("RUN EDGE DETECTION NON ROOT : "+currentProcessorRank +" == "+ rootProcessorRank);
+			//System.out.println("RUN EDGE DETECTION NON ROOT : "+currentProcessorRank +" == "+ rootProcessorRank);
 			//this part will be called by changing current processor rank
-			System.out.println("HELLO");
+			//System.out.println("HELLO");
 			Distributed.nonRootAction();
 		}
 		MPI.Finalize();

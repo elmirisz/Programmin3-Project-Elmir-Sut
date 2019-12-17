@@ -8,6 +8,8 @@ import javax.swing.*;
 import static elmir.sut.project.EdgeDetection.*;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
@@ -27,6 +29,7 @@ public class EdgeDetectionUI {
     private final ImagePanel sourceImage = new ImagePanel(500, 510);
     private final ImagePanel destImage = new ImagePanel(500, 510);
     private final JPanel mainPanel;
+    public static JFrame mainFrame;
     
     private final EdgeDetection edgeDetection;
     BufferedImage imageBuffer;
@@ -39,7 +42,7 @@ public class EdgeDetectionUI {
     	//here we create instance of Edge detection to get picture and to be able to convolute it
         edgeDetection = new EdgeDetection();
         
-        JFrame mainFrame = createMainFrame();
+         mainFrame = createMainFrame();
 
         mainPanel = new JPanel(new GridLayout(1, 2));
         mainPanel.add(sourceImage); //at the beginning will be same picture
@@ -190,5 +193,6 @@ public class EdgeDetectionUI {
        System.out.println("CROP CROP CROP :" + dest.getWidth());
         return dest; 
      }
+	
 
 }

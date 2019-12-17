@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Path"/>
+		<item key="selection" value="BEFORE"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="before"/>
+			<item value="actionPerformed"/>
+			<item value="width"/>
+			<item value="convolutionFinal"/>
+			<item value="currentProcessorRank"/>
+			<item value="numberOfProcessors"/>
+			<item value="frame"/>
+			<item value="rootProcessorRank"/>
 			<item value="path"/>
 			<item value="system"/>
 			<item value="image"/>
@@ -15,14 +23,6 @@
 			<item value="Image panel"/>
 			<item value="basePath"/>
 			<item value="image panel"/>
-			<item value="convolutionFinal"/>
-			<item value="zeros"/>
-			<item value="convertArrayToMatrix"/>
-			<item value="matrix number"/>
-			<item value="applyConvolution"/>
-			<item value="output"/>
-			<item value="numberOfProcessors"/>
-			<item value="applyConvolutionDistributed"/>
 		</list>
 		<list key="replacehistory">
 			<item value="convolution"/>

@@ -26,7 +26,7 @@ public class Distributed {
 	//setters
 	
 	
-	double[][] input;
+	static double[][] input;
     static int width;
     static int height;
     static double[][] kernel;
@@ -96,15 +96,30 @@ public class Distributed {
        		arrayData = Arrays.copyOfRange(A, start, partition);
        		System.out.println("FOR :" + A.length +", " +", "+ start + ", "+partition);
        	}
-	    	
-       	double[] b = new double[1];//just to satisfy array data type
+	    
+	    double b [] = new double[1+1+1+1+1+(kernelWidth*kernelHeight)];
+//       	double[] b = new double[1];//just to satisfy array data type
        	b[0] = initPartition;
+       	b[1] =width;
+       	b[2]=height;
+       	b[3]=kernelWidth;
+       	b[4]=kernelHeight;
+       	
+       	double[]kernelArray=convertMatrixToArray(kernel);
+       	for(int j=0;j<kernelArray.length;j++) {
+       		b[5+j]=kernelArray[j];
+       	}
+       	
+       	
+      System.out.println("B length:" + b[4] );
+
        	
        	//To send the size of array to be sent to the non root
        	//processors/cores to sort
        	//comm.Isend(data, start, size, type, to, flag
        	
-       	comunicator.Isend(b, 0, 1, MPI.DOUBLE, i, 1);//use as a semaphore for the nonRootAction to wait
+      
+       	comunicator.Isend(b, 0, 14, MPI.DOUBLE, i, 1);//use as a semaphore for the nonRootAction to wait
        	System.out.println("SENT b:" + b[0]);
        	
        	
@@ -152,13 +167,23 @@ public class Distributed {
 	
 	
 	public static void nonRootAction() {
-		System.out.println("--------NON ROOT NON ROOT NON ROOT NON ROOT -----------");
-		double[] init = new double[1];
-		comunicator.Recv(init, 0, 1, MPI.DOUBLE, rootProcessorRank, 1);
-		System.out.println("DISTRIBUTED: height" +  height);
-		int initialPart = (int)init[0];
+			
 		
-		System.out.println("INIT RECIEVED FROM ROOT" +  init[0]);
+		System.out.println("--------NON ROOT NON ROOT NON ROOT NON ROOT -----------");
+		
+		double[] init = new double[14];
+		comunicator.Recv(init, 0, 14, MPI.DOUBLE, rootProcessorRank, 1);
+		System.out.println("INIT RECIEVED FROM ROOT " +  init[0]);
+//		System.out.println("RECIEVED: height" +  height);
+		int initialPart = (int)init[0];
+		int width = (int)init[1];
+		int height = (int)init[2];
+		int kernelWidth = (int)init[3];
+		int kernelHeight = (int)init[4];
+		double[] kernel =  Arrays.copyOfRange(init, 5, init.length);
+		
+		
+
 		
         double[]  arrayData = new double[initialPart];
         int end;
@@ -168,21 +193,32 @@ public class Distributed {
         
         comunicator.Recv(arrayData, 0, initialPart, MPI.DOUBLE, rootProcessorRank, 1);
        
+        for(int i = 0 ; i<init.length; i++) {
+        	System.out.print(init[i] + "~");
+        }
+        System.out.println();
         end = arrayData.length;
-        
+        //this prints out
+        System.out.println("NONROOT END SWITCH: " + arrayData.length);
+       // System.out.println("Check number of elements "+ Distributed.kernelWidth*Distributed.kernelHeight);
+       
         //we need to convolute here
-        convolutionFinal(arrayData, width, height, kernel, kernelWidth, kernelHeight );
+        arrayData = convolutionFinal(arrayData, width, height, kernel, kernelWidth, kernelHeight );
        
         
         switch(currentProcessorRank){
         case 1:
+        	System.out.println("SENT================! CASE:1" +arrayData.length);
         	comunicator.Send(arrayData, 0, end, MPI.DOUBLE, 0, 1);
+        	
         	break;
         case 2:
         	comunicator.Send(arrayData, 0, end, MPI.DOUBLE, 0, 1);
+        	System.out.println("SENT! CASE:2" +arrayData.length);
         	break;
         case 3:
         	comunicator.Send(arrayData, 0, end, MPI.DOUBLE, 0, 1);
+        	System.out.println("SENT! CASE:3" +arrayData.length);
         	break;
         }
         return;
@@ -196,9 +232,9 @@ public class Distributed {
 	
 	
 	//we will try to convert it to single array conversion
-    public static double[][] convolutionFinal(double[] input,
-                                           int width1, int height1,
-                                           double[][] kernel,
+    public static double[] convolutionFinal(double[] input,
+                                           int width, int height,
+                                           double[] kernel,
                                            int kernelWidth,
                                            int kernelHeight) {	
     	 System.out.println("WIDTH HEIGHT " + width +" "+height);
@@ -225,16 +261,16 @@ public class Distributed {
             for (int j = 0; j < smallHeight; ++j) {
 //            	System.out.println("Matrix number " + input[i][j]);
 
-            	System.out.println("H number " + smallWidth);
-            	System.out.println("W number " + smallHeight);
+//            	System.out.println("H number " + smallWidth);
+//            	System.out.println("W number " + smallHeight);
                 outputArray[(i+1)*height+(j+1)] =  singlePixelConvolutionArray(inputArray, i, j, kernel,
-                        kernelWidth, kernelHeight, height);
-                System.out.println("Outputarray number " + outputArray[(i+1)*height+(j+1)]);
+                        kernelWidth, kernelHeight, smallHeight);
+                //System.out.println("Outputarray number " + outputArray[(i+1)*height+(j+1)]);
                 //  matrix[i+1][j+1] = array [i*width + j]
       
             }
         }
-        return convertArrayToMatrix(outputArray, width, height);
+        return outputArray;
     }
 	
 	
@@ -252,7 +288,7 @@ public class Distributed {
 	// method that calculates calue for each pixel using convolution formula
 	public static double singlePixelConvolutionArray(double[] input, // part of the picture we select
 			int x, int y, // to get current part of the picture to be convoluted
-			double[][] k, // actual kernel matrix
+			double[] k, // actual kernel matrix
 			int kernelWidth, // kernel size used in loop
 			int kernelHeight, int height) {
 
@@ -261,14 +297,17 @@ public class Distributed {
 			for (int j = 0; j < kernelHeight; ++j) {
 //ovdje nesto ne stima
 //  matrix[i][j] = array [i*width + j]
+// kernel[i][j] = k[i*kernelWidth + j]
 
 //input[x + i][y + j] == array[(x]
-				output = output + (input[(x + i) * height + (j + y)] * k[i][j]); // we traverse through kernel and
+				output = output + (input[(x + i) * height + (j + y)] * k[i*kernelWidth + j]); // we traverse through kernel and
 																					// multiply
 			}
 		}
 		return output;
 	}
+	
+	
 	
 	//taken from my Matrix project
 	static double[] convertMatrixToArray (double[][]matrix) {
