@@ -61,7 +61,7 @@ public class Distributed {
     
     double[][] returnOutput() throws InterruptedException {
     	
-    	return  convertArrayToMatrix(rootAction(arrayImage), height, width);
+    	return  convertArrayToMatrix(rootAction(arrayImage), width, height);
     }
 	
     
@@ -75,8 +75,15 @@ public class Distributed {
 		System.out.println("HERE WE SEE VALUES arrayImage.length  "  + arrayImage.length);
 		System.out.println("HERE WE SEE VALUES numberOfProcessors  " + numberOfProcessors);
 		
-       int initPartition = arrayImage.length/(numberOfProcessors-1); //need to get number of elements of array to be proccesed by single proccesor
-       System.out.println("INITPARTITION UPPER:" + initPartition + " Width value" + arrayImage.length);
+       int initPartition = A.length/(numberOfProcessors-1); //need to get number of elements of array to be proccesed by single proccesor
+       System.out.println("INITPARTITION UPPER:" + initPartition + " Width value" + A.length);
+       int additional=0;
+       System.out.println("A.length%3>0 "+A.length%3 +"ADDITION: "+ additional) ;
+       
+       if(A.length%3>0) {
+    	   System.out.println("A.length%3>0"+A.length%3) ;
+    	   additional=1;
+       }else {additional=0;}
        
        int start = 0;
 	   double[] arrayData = null;
@@ -97,17 +104,19 @@ public class Distributed {
        		System.out.println("FOR :" + A.length +", " +", "+ start + ", "+partition);
        	}
 	    
-	    double b [] = new double[1+1+1+1+1+(kernelWidth*kernelHeight)];
+	    double b [] = new double[1+1+1+1+1+1+(kernelWidth*kernelHeight)];
 //       	double[] b = new double[1];//just to satisfy array data type
        	b[0] = initPartition;
        	b[1] =width;
        	b[2]=height;
        	b[3]=kernelWidth;
        	b[4]=kernelHeight;
+       	b[5]=additional;
        	
+       	//solved
        	double[]kernelArray=convertMatrixToArray(kernel);
        	for(int j=0;j<kernelArray.length;j++) {
-       		b[5+j]=kernelArray[j];
+       		b[6+j]=kernelArray[j];
        	}
        	
        	
@@ -125,7 +134,10 @@ public class Distributed {
        	
        		//here we actually determine to which proccesor to be sent
           comunicator.Isend(arrayData, 0, initPartition, MPI.DOUBLE, i, 1);
-          System.out.println("SENT PARTITION :" + partition);
+          System.out.println("START______________ :" + start);
+          
+          System.out.println("DO WE HAVE PROBLEM:?????? IS " + A.length+"=="+3*initPartition );
+          
            start = partition; 
            partition += initPartition;
        }
@@ -146,11 +158,17 @@ public class Distributed {
 	   
 	   /** PROBLEM PROBLEM PROBLEM PROBLEM PROBLEM  -> */
 	   
-	   comunicator.Recv(temp1, 0, initPartition, MPI.DOUBLE, 1, 1);
-	   comunicator.Recv(temp2, 0, initPartition, MPI.DOUBLE, 2, 1);
-	   comunicator.Recv(temp3, 0, initPartition, MPI.DOUBLE, 3, 1);
 	   
+	   comunicator.Recv(temp1, 0, initPartition, MPI.DOUBLE, 1, 1);
+	   System.out.println("AFTER: ################################# INIT x " +initPartition );
+	   
+	   comunicator.Recv(temp2, 0, initPartition, MPI.DOUBLE, 2, 1);
+	   System.out.println("AFTER: ################################# " );
+	   comunicator.Recv(temp3, 0, initPartition+additional, MPI.DOUBLE, 3, 1);
+	   System.out.println("AFTER: ################################# " );
+	  
 	    System.out.println("AFTER: " +temp1[5]);
+//		
 	   
 
 	    double[] tempS = Arrays.copyOf(temp1, temp1.length + temp2.length);
@@ -161,7 +179,19 @@ public class Distributed {
 		System.arraycopy(temp3, 0, almostDone, tempS.length, temp3.length);
 		
 		
-		return almostDone;
+		System.out.println("<<<<<<<<<<<<<<<<<<"+almostDone.length+">>>>>>>>>>>>>>>");
+		System.out.println("<<<<<<<<<<<<<<<<<||||||||<"+arrayImage.length+">>>||||||>>>>>>>>>>>>");
+		//MPI.Finalize();
+		System.out.println("RETURNED!");
+		System.out.println("FIRST ELEMENT!"+almostDone[0]);
+		System.out.println("LAST ELEMENT!"+almostDone[almostDone.length-1]);
+		for (int i = temp1.length-100; i < temp1.length; i++) {
+			
+			System.out.print(temp3[i] + " ");
+		}
+		System.out.println();
+		
+		return arrayImage;
 		
 	}
 	
@@ -171,8 +201,8 @@ public class Distributed {
 		
 		System.out.println("--------NON ROOT NON ROOT NON ROOT NON ROOT -----------");
 		
-		double[] init = new double[14];
-		comunicator.Recv(init, 0, 14, MPI.DOUBLE, rootProcessorRank, 1);
+		double[] init = new double[15];
+		comunicator.Recv(init, 0, 15, MPI.DOUBLE, rootProcessorRank, 1);
 		System.out.println("INIT RECIEVED FROM ROOT " +  init[0]);
 //		System.out.println("RECIEVED: height" +  height);
 		int initialPart = (int)init[0];
@@ -180,29 +210,45 @@ public class Distributed {
 		int height = (int)init[2];
 		int kernelWidth = (int)init[3];
 		int kernelHeight = (int)init[4];
-		double[] kernel =  Arrays.copyOfRange(init, 5, init.length);
+		int additional = (int)init[5];
+		double[] kernel =  Arrays.copyOfRange(init, 6, init.length);
 		
+//		for (int i = 0; i < init.length; i++) {
+//			
+//			System.out.print(init[i] + "|__"+i+"__|");
+//		}
+//		System.out.println();
 		
-
-		
-        double[]  arrayData = new double[initialPart];
+        double[]  arrayData; //= new double[initialPart];
         int end;
         
         currentProcessorRank = comunicator.Rank();
         System.out.println("I need current rank NONROOT:" + currentProcessorRank);
         
+        if(additional==1 && currentProcessorRank==3) {
+        	arrayData = new double[initialPart+1];
+        	System.out.println("11111111111111111111111111111111111111111111111111   " + currentProcessorRank);
+        comunicator.Recv(arrayData, 0, initialPart+1, MPI.DOUBLE, rootProcessorRank, 1);
+        }else {
+        arrayData = new double[initialPart];
         comunicator.Recv(arrayData, 0, initialPart, MPI.DOUBLE, rootProcessorRank, 1);
-       
-        for(int i = 0 ; i<init.length; i++) {
-        	System.out.print(init[i] + "~");
+        System.out.println("000000000000000000000000000000000000000000000000000000   "+ + currentProcessorRank);
         }
-        System.out.println();
+        
+        
+        
+        
+       
         end = arrayData.length;
+        System.out.println("Proccesor "+currentProcessorRank+": " +end);
         //this prints out
-        System.out.println("NONROOT END SWITCH: " + arrayData.length);
+//        System.out.println("NONROOT END SWITCH: " + arrayData.length);
        // System.out.println("Check number of elements "+ Distributed.kernelWidth*Distributed.kernelHeight);
        
         //we need to convolute here
+//        System.out.println("WIDTH: "+width+" HEIGHT:"+ height);
+//        System.out.println("WHICH DATA WE NEED" +arrayData.length/3);
+//        
         arrayData = convolutionFinal(arrayData, width, height, kernel, kernelWidth, kernelHeight );
        
         
@@ -214,11 +260,11 @@ public class Distributed {
         	break;
         case 2:
         	comunicator.Send(arrayData, 0, end, MPI.DOUBLE, 0, 1);
-        	System.out.println("SENT! CASE:2" +arrayData.length);
+        	System.out.println("SENT! CASE:2 " +arrayData.length);
         	break;
         case 3:
         	comunicator.Send(arrayData, 0, end, MPI.DOUBLE, 0, 1);
-        	System.out.println("SENT! CASE:3" +arrayData.length);
+        	System.out.println("SENT! CASE:3 " +arrayData.length);
         	break;
         }
         return;
@@ -246,30 +292,19 @@ public class Distributed {
         
         double[] outputArray = new double[width*height];
         double[] inputArray = input;
-    //  matrix[i][j] = array [i*width + j]
-        
-       // fill2DMatrix(output, height, width); //put in zeros
-      //  System.out.println("Matrix number " + input[50]);
-        
-//       
-//        //here we need to fill in each cell
-//        System.out.println("INPUT MATRIX: width/height   "  +width+"/"+height);
-//        System.out.println("INPUT MATRIX: width/height   "  +input.length+"/"+input.length);
+        int number = 0;
 //        
-       // System.out.println("LOOP:" + smallWidth + " : " + smallHeight +": TOTAL: " + smallWidth*smallHeight+"<"+outputArray.length );
+       
         for (int i = 0; i < smallWidth; ++i) { //filling in the values starting from beginning
             for (int j = 0; j < smallHeight; ++j) {
-//            	System.out.println("Matrix number " + input[i][j]);
-
-//            	System.out.println("H number " + smallWidth);
-//            	System.out.println("W number " + smallHeight);
+//            	
+//        		number++;
                 outputArray[(i+1)*height+(j+1)] =  singlePixelConvolutionArray(inputArray, i, j, kernel,
                         kernelWidth, kernelHeight, smallHeight);
-                //System.out.println("Outputarray number " + outputArray[(i+1)*height+(j+1)]);
-                //  matrix[i+1][j+1] = array [i*width + j]
-      
+                
             }
         }
+        System.out.println("PRINT FINAL NUMBER: " + number);
         return outputArray;
     }
 	
@@ -291,20 +326,25 @@ public class Distributed {
 			double[] k, // actual kernel matrix
 			int kernelWidth, // kernel size used in loop
 			int kernelHeight, int height) {
+		//System.out.println("ENTERED singlePixelConvolution");  
+		int number=0;
+		double output = 0; //accumulator
+        for (int i = 0; i < kernelWidth; ++i) {
+            for (int j = 0; j < kernelHeight; ++j) {
+            	//x should be width or column number
+            	
+                output = output + (input[(i)*height+(j)] * k[i*kernelWidth +j]); //we traverse through kernel and multiply 
+                number++;
 
-		double output = 0; // accumulator
-		for (int i = 0; i < kernelWidth; ++i) {
-			for (int j = 0; j < kernelHeight; ++j) {
-//ovdje nesto ne stima
-//  matrix[i][j] = array [i*width + j]
-// kernel[i][j] = k[i*kernelWidth + j]
-
-//input[x + i][y + j] == array[(x]
-				output = output + (input[(x + i) * height + (j + y)] * k[i*kernelWidth + j]); // we traverse through kernel and
-																					// multiply
-			}
-		}
-		return output;
+               // output = output + (input[(x+i)*height+(j+y)] * k[i*kernelWidth +j]); //we traverse through kernel and multiply 
+               
+            }
+            
+        }
+        //System.out.println("NUMBER OF LOOPS: "+number);
+        
+        return output;
+    
 	}
 	
 	
@@ -337,7 +377,7 @@ public class Distributed {
 					}
 					
 				} 
-		  }else System.out.println("ALL ZEROS IN MATRIX. ERROR!!");
+		  }else System.out.println("ALL ZEROS IN MATRIX. ERROR!!" + height*width+ "==" +array.length);
 		  
 		  
 		  return matrix;

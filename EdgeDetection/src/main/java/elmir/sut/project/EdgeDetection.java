@@ -68,7 +68,7 @@ public class EdgeDetection {
         
        // numberOfProcessors = comunicator.Size();
         
-        double[][] convolvedPixels = applyConvolutionDistributed(bufferedImage.getWidth(),
+        double[][] convolvedPixels = applyConvolution(bufferedImage.getWidth(),
                 bufferedImage.getHeight(), image, filter); //to start process
         
         return createImageFromConvolutionMatrix(bufferedImage, convolvedPixels); 
@@ -113,25 +113,64 @@ public class EdgeDetection {
         return finalConv;
     }
     
-    /** TEST TEST TEST TESTTEST TEST */
+//    /** TEST TEST TEST TESTTEST TEST */
+//    private double[][] applyConvolutionArray(int width, int height, double[][][] image, double[][] filter) {
+//        long current = System.currentTimeMillis();
+//            ConvolutionArray convolution = new ConvolutionArray();
+//            double[][] redConv = image[0];
+//            double[][] greenConv = image[1];
+//            double[][] blueConv = image[2];
+//            double[][] finalConv = new double[redConv.length][redConv[0].length];
+//            //here we create gray version of convolution
+//            
+//            for (int i = 0; i < redConv.length; i++) {
+//                for (int j = 0; j < redConv[i].length; j++) {
+//                    finalConv[i][j] = (redConv[i][j] + greenConv[i][j] + blueConv[i][j]);
+//                }
+//            }
+//            //System.out.println("Available threads ..." + availableThreads);
+//            finalConv= convolution.convolutionFinal(finalConv, height, width, filter, 3, 3);
+//        long end = System.currentTimeMillis();
+//        System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
+//            return finalConv;
+//        }
+    
     private double[][] applyConvolutionArray(int width, int height, double[][][] image, double[][] filter) {
+
         long current = System.currentTimeMillis();
+
             ConvolutionArray convolution = new ConvolutionArray();
+
             double[][] redConv = convolution.convolutionFinal(image[0], height, width, filter, 3, 3);
+
             double[][] greenConv = convolution.convolutionFinal(image[1], height, width, filter, 3, 3);
+
             double[][] blueConv = convolution.convolutionFinal(image[2], height, width, filter, 3, 3);
+
             double[][] finalConv = new double[redConv.length][redConv[0].length];
+
             //here we create gray version of convolution
+
             
+
             for (int i = 0; i < redConv.length; i++) {
+
                 for (int j = 0; j < redConv[i].length; j++) {
+
                     finalConv[i][j] = redConv[i][j] + greenConv[i][j] + blueConv[i][j];
+
                 }
+
             }
+
             //System.out.println("Available threads ..." + availableThreads);
+
         long end = System.currentTimeMillis();
+
         System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
+
             return finalConv;
+
         }
     
     
@@ -221,22 +260,28 @@ public class EdgeDetection {
    	 
        
         //RED PARALLEL 
-        Distributed distributed = new Distributed(image[0], height, width, filter, 3, 3); 
-        double[][] redConv =distributed.returnOutput();
-        
+//        Distributed distributed = new Distributed(image[0], height, width, filter, 3, 3); 
+//        System.out.println("EDGE DETECTION SET");
+//        double[][] redConv =distributed.returnOutput();
+//        System.out.println(redConv.length +"   RRRRR" + redConv[0].length);
+    	double[][] redConv =image[0];
+    	
        
       //GREEN PARALLEL 
-        distributed = new Distributed(image[1], height, width, filter, 3, 3);    
-        double[][] greenConv =distributed.returnOutput();
+        //   
+       // double[][] greenConv =distributed.returnOutput();
         
+        double[][] greenConv =image[1];
 
+        
+       
 //      //BLUE PARALLEL 
-        distributed = new Distributed(image[2], height, width, filter, 3, 3);
+       // distributed = new Distributed(image[2], height, width, filter, 3, 3);
 //       
 //         
         
-       double[][] blueConv =distributed.returnOutput();
-        
+       //double[][] blueConv =distributed.returnOutput();
+        double[][] blueConv=image[2];
         
         
         double[][] finalConv = new double[redConv.length][redConv[0].length];
@@ -244,15 +289,42 @@ public class EdgeDetection {
         
         for (int i = 0; i < redConv.length; i++) {
             for (int j = 0; j < redConv[i].length; j++) {
-                finalConv[i][j] = redConv[i][j] + greenConv[i][j] + blueConv[i][j];
+                finalConv[i][j] = (redConv[i][j] + greenConv[i][j] + blueConv[i][j])/3;
             }
         }
         //System.out.println("Available threads ..." + availableThreads);
         long end = System.currentTimeMillis();
         //System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
         
+        Distributed distributed = new Distributed(finalConv, height, width, filter, 3, 3); 
+        finalConv= distributed.returnOutput();
         return finalConv;
     }
+    
+    
+    private double[][] applyConvolutionDistributedMPI(int width, int height, double[][][] image, double[][] filter) throws InterruptedException {
+
+        long current = System.currentTimeMillis();
+
+            DistributedMPI convolution = new DistributedMPI(image[0],image[1],image[2],height, width, filter, 3, 3);
+
+            
+            double[][] finalConv =  convolution.returnOutput();
+            //here we create gray version of convolution
+
+            
+
+            
+
+            //System.out.println("Available threads ..." + availableThreads);
+
+        long end = System.currentTimeMillis();
+
+        System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
+
+            return finalConv;
+
+        }
     
     
     

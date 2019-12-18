@@ -17,7 +17,7 @@ public class RunEdgeDetection {
 	public static int numberOfProcessors;
 	
 	public static Comm comunicator;
-	
+	static int counter=0;
 
     public static void main(String[] args) throws IOException {
     	/**Initialize the MPI execution environment */
@@ -62,10 +62,13 @@ public class RunEdgeDetection {
 		else {
 			//System.out.println("RUN EDGE DETECTION NON ROOT : "+currentProcessorRank +" == "+ rootProcessorRank);
 			//this part will be called by changing current processor rank
-			//System.out.println("HELLO");
-			Distributed.nonRootAction();
+			System.out.println("HELLO COUNTER "+ counter);
+			counter++;
+			DistributedMPI.nonRootAction();
 		}
+		
 		MPI.Finalize();
+		System.out.println("COOOOOONGRAAAAAAATSSSSS" + counter);
 		return;
     	
     	
