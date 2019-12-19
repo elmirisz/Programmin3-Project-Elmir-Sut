@@ -97,7 +97,7 @@ public class ImagePanel extends JPanel {
     }
 
     private String getDefaultImage() {
-        return "/placeholder.gif";
+        return "/placeholder.jpg";
     }
 
 

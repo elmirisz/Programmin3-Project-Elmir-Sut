@@ -9,7 +9,8 @@ import mpi.MPI;
 
 public class DistributedMPI {
 	public static int rootProcessorRank = RunEdgeDetection.rootProcessorRank;
-	
+	 static long current ;
+	 static long end;
 
 	//need communicator to send messages between 
 	private static Comm comunicator = RunEdgeDetection.comunicator;
@@ -19,6 +20,7 @@ public class DistributedMPI {
 	//private static int numberOfProcessors = RunEdgeDetection.numberOfProcessors;
 	
 	private static int currentProcessorRank;
+	
 	
 	//public static int slice = EdgeDetection.;
 	
@@ -77,6 +79,7 @@ public class DistributedMPI {
     
 	
 	public static double[][] rootAction(double[][] R, double[][] G, double[][] B, int height, int width,double[][] kernel, int kernelWidth, int kernelHeight) throws InterruptedException {  
+		
 		double[] kernelArray=convertMatrixToArray(kernel);
 		double[] A1 = convertMatrixToArray(R); //WORKS
 		double[] A2 = convertMatrixToArray(G); //WORKS
@@ -100,17 +103,18 @@ public class DistributedMPI {
        	}
        	
        	
-      System.out.println("B length:" + b[4] );
+      //System.out.println("B length:" + b[4] );
 
        	
        	//To send the size of array to be sent to the non root
        	//processors/cores to sort
        	//comm.Isend(data, start, size, type, to, flag
 //       	double[] arr = new double[(int) Integer.MAX_VALUE];
-//       	System.out.println("ARR length" + arr.length);
+//       	//System.out.println("ARR length" + arr.length);
+       	current = System.currentTimeMillis();
       	
        	comunicator.Isend(b, 0, (1+1+1+1+(kernelWidth*kernelHeight)), MPI.DOUBLE, i, 1);//use as a semaphore for the nonRootAction to wait
-       	System.out.println("A1 length:" + A1.length);
+       	//System.out.println("A1 length:" + A1.length);
        	  
        	
        if(i==1) {
@@ -133,41 +137,43 @@ public class DistributedMPI {
 
 	   
 
-	    double[] temp1 = new  double[A1.length];
+	   double[] temp1 = new  double[A1.length];
 	   double[] temp2 = new double[A1.length];
 	   double[] temp3 = new double[A1.length+1];
 	   
 //	    function nonRoot()
 //	    comm.Recv(data, start, size, type, origin,flag)
 //
-	   System.out.println("BEFORE: " + temp1[5]);
+	   //System.out.println("BEFORE: " + temp1[5]);
 	   //here is the actual problem!!! does not go forward from here
 	   
 	   /** PROBLEM PROBLEM PROBLEM PROBLEM PROBLEM  -> */
 	   
 	   
 	   comunicator.Recv(temp1, 0, A1.length, MPI.DOUBLE, 1, 1);
-	   System.out.println("AFTER: ################################# " );
+	   //System.out.println("AFTER: ################################# " );
 	   
 	   comunicator.Recv(temp2, 0, A1.length, MPI.DOUBLE, 2, 1);
-	   System.out.println("AFTER: ################################# " );
+	   //System.out.println("AFTER: ################################# " );
 	   comunicator.Recv(temp3, 0, A1.length, MPI.DOUBLE, 3, 1);
-	   System.out.println("AFTER: ################################# " );
+	   //System.out.println("AFTER: ################################# " );
 	  
-	    System.out.println("AFTER: " +temp1[5]);
+	    //System.out.println("AFTER: " +temp1[5]);
 //		
 	   
 
 	   
 		
-		System.out.println("<<<<<<<<<<<<<<<<<<"+">>>>>>>>>>>>>>>");
-		System.out.println("<<<<<<<<<<<<<<<<<||||||||<"+">>>||||||>>>>>>>>>>>>");
+		//System.out.println("<<<<<<<<<<<<<<<<<<"+">>>>>>>>>>>>>>>");
+		//System.out.println("<<<<<<<<<<<<<<<<<||||||||<"+">>>||||||>>>>>>>>>>>>");
 		//MPI.Finalize();
-		System.out.println("RETURNED!");
+		//System.out.println("RETURNED!");
 		double[] arrayImage=new double[temp1.length];
 		
+		end = System.currentTimeMillis();
+		System.out.println("TIME____ HERE : end-current" + (end-current));
 		
-		System.out.println();
+		//System.out.println();
 		for(int i = 0; i < temp1.length;i++) {
 			arrayImage[i]=temp1[i]+temp2[i]+temp3[i];
 		}
@@ -186,8 +192,8 @@ public class DistributedMPI {
 		
 		double[] init = new double[13];
 		comunicator.Recv(init, 0, 15, MPI.DOUBLE, rootProcessorRank, 1);
-		System.out.println("INIT RECIEVED FROM ROOT " +  init[0]);
-//		System.out.println("RECIEVED: height" +  height);
+		//System.out.println("INIT RECIEVED FROM ROOT " +  init[0]);
+//		//System.out.println("RECIEVED: height" +  height);
 		
 		int width = (int)init[0];
 		int height = (int)init[1];
@@ -198,15 +204,15 @@ public class DistributedMPI {
 		
 //		for (int i = 0; i < init.length; i++) {
 //			
-//			System.out.print(init[i] + "|__"+i+"__|");
+//			//System.out.print(init[i] + "|__"+i+"__|");
 //		}
-//		System.out.println();
+//		//System.out.println();
 		
         double[]  arrayData = new double[height*width];
        
         
         currentProcessorRank = comunicator.Rank();
-        System.out.println("I need current rank NONROOT:" + currentProcessorRank);
+        //System.out.println("I need current rank NONROOT:" + currentProcessorRank);
         
         
         comunicator.Recv(arrayData, 0, height*width, MPI.DOUBLE, rootProcessorRank, 1);
@@ -218,29 +224,29 @@ public class DistributedMPI {
        
       
         
-//        System.out.println("NONROOT END SWITCH: " + arrayData.length);
-       // System.out.println("Check number of elements "+ Distributed.kernelWidth*Distributed.kernelHeight);
+//        //System.out.println("NONROOT END SWITCH: " + arrayData.length);
+       // //System.out.println("Check number of elements "+ Distributed.kernelWidth*Distributed.kernelHeight);
        
         //we need to convolute here
-//        System.out.println("WIDTH: "+width+" HEIGHT:"+ height);
-//        System.out.println("WHICH DATA WE NEED" +arrayData.length/3);
+//        //System.out.println("WIDTH: "+width+" HEIGHT:"+ height);
+//        //System.out.println("WHICH DATA WE NEED" +arrayData.length/3);
 //        
         arrayData = convolutionFinalArray(arrayData, width, height, kernel, kernelWidth, kernelHeight );
        
         
         switch(currentProcessorRank){
         case 1:
-        	System.out.println("SENT================! CASE:1" +arrayData.length);
+        	//System.out.println("SENT================! CASE:1" +arrayData.length);
         	comunicator.Send(arrayData, 0, size, MPI.DOUBLE, 0, 1);
         	
         	break;
         case 2:
         	comunicator.Send(arrayData, 0, size, MPI.DOUBLE, 0, 1);
-        	System.out.println("SENT! CASE:2 " +arrayData.length);
+        	//System.out.println("SENT! CASE:2 " +arrayData.length);
         	break;
         case 3:
         	comunicator.Send(arrayData, 0, size, MPI.DOUBLE, 0, 1);
-        	System.out.println("SENT! CASE:3 " +arrayData.length);
+        	//System.out.println("SENT! CASE:3 " +arrayData.length);
         	break;
         }
         return;
@@ -263,8 +269,8 @@ public class DistributedMPI {
 		double[] outputArray = new double[width * height];
 		double[] inputArray = input;
 //  matrix[i][j] = array [i*width + j]
-		System.out.println("INPUT MATRIX: width/height   " + width + "/" + height);
-// System.out.println("INPUT MATRIX: width/height   "  +input.length+"/"+input[0].length);
+		//System.out.println("INPUT MATRIX: width/height   " + width + "/" + height);
+// //System.out.println("INPUT MATRIX: width/height   "  +input.length+"/"+input[0].length);
 // fill2DMatrix(output, height, width); //put in zeros
 
 //here we need to fill in each cell
@@ -276,8 +282,8 @@ public class DistributedMPI {
 			}
 		}
 
-// System.out.println("Matrix number of elements: " + (input.length*input[0].length));
-		System.out.println("Array number of elements: " + (outputArray.length));
+// //System.out.println("Matrix number of elements: " + (input.length*input[0].length));
+		//System.out.println("Array number of elements: " + (outputArray.length));
 		return outputArray;
 	}
 	
@@ -298,7 +304,7 @@ public class DistributedMPI {
                                                 int kernelWidth, //kernel size used in loop
                                                 int kernelHeight, int height) {
     	
-    	System.out.println();
+    	//System.out.println();
         double output = 0; //accumulator
         for (int i = 0; i < kernelWidth; ++i) {
             for (int j = 0; j < kernelHeight; ++j) {
@@ -339,7 +345,7 @@ public class DistributedMPI {
 					}
 					
 				} 
-		  }else System.out.println("ALL ZEROS IN MATRIX. ERROR!!" + height*width+ "==" +array.length);
+		  }else return null;//System.out.println("ALL ZEROS IN MATRIX. ERROR!!" + height*width+ "==" +array.length);
 		  
 		  
 		  return matrix;

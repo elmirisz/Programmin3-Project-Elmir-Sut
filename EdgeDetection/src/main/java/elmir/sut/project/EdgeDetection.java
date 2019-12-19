@@ -29,7 +29,6 @@ public class EdgeDetection {
 	public static int rootProcessorRank = 0;
 	public static int currentProcessorRank;
 	public static int numberOfProcessors;
-	
 	public static Comm comunicator;
 	
 	
@@ -68,8 +67,11 @@ public class EdgeDetection {
         
        // numberOfProcessors = comunicator.Size();
         
-        double[][] convolvedPixels = applyConvolutionDistributedMPI(bufferedImage.getWidth(),
+        double[][] convolvedPixels = applyConvolution(bufferedImage.getWidth(),
                 bufferedImage.getHeight(), image, filter); //to start process
+       
+        
+       
         
         return createImageFromConvolutionMatrix(bufferedImage, convolvedPixels);
         
