@@ -68,10 +68,11 @@ public class EdgeDetection {
         
        // numberOfProcessors = comunicator.Size();
         
-        double[][] convolvedPixels = applyConvolution(bufferedImage.getWidth(),
+        double[][] convolvedPixels = applyConvolutionDistributedMPI(bufferedImage.getWidth(),
                 bufferedImage.getHeight(), image, filter); //to start process
         
-        return createImageFromConvolutionMatrix(bufferedImage, convolvedPixels); 
+        return createImageFromConvolutionMatrix(bufferedImage, convolvedPixels);
+        
         
         
     }
@@ -298,25 +299,18 @@ public class EdgeDetection {
         
         Distributed distributed = new Distributed(finalConv, height, width, filter, 3, 3); 
         finalConv= distributed.returnOutput();
+        new Main();
         return finalConv;
     }
     
     
     private double[][] applyConvolutionDistributedMPI(int width, int height, double[][][] image, double[][] filter) throws InterruptedException {
-
         long current = System.currentTimeMillis();
+        
+            //DistributedMPI convolution = new DistributedMPI(image[0],image[1],image[2],height, width, filter, 3, 3);
 
-            DistributedMPI convolution = new DistributedMPI(image[0],image[1],image[2],height, width, filter, 3, 3);
-
-            
-            double[][] finalConv =  convolution.returnOutput();
-            //here we create gray version of convolution
-
-            
-
-            
-
-            //System.out.println("Available threads ..." + availableThreads);
+            double[][] finalConv =  DistributedMPI.rootAction(image[0],image[1],image[2],width, height, filter, 3, 3);
+  
 
         long end = System.currentTimeMillis();
 
@@ -356,7 +350,9 @@ public class EdgeDetection {
         
         File outputFile = new File( basePath + "/edgesTmp.png");
         ImageIO.write(writeBackImage, "png", outputFile); //here we save image back
-        return outputFile;
+       
+        return outputFile; 
+       
     }
 
     private int fixOutOfRangeRGBValues(double value) {

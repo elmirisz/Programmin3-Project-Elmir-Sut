@@ -16,4 +16,5 @@
     <fullyQualifiedTypeName name="elmir.sut.project.ui.EdgeDetectionUI"/>
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="elmir.sut.project.RunEdgeDetection"/>
 </qualifiedTypeNameHistroy>

@@ -18,19 +18,34 @@ public class RunEdgeDetection {
 	
 	public static Comm comunicator;
 	static int counter=0;
+	static String[] argsMain;
+	
+	
 
     public static void main(String[] args) throws IOException {
     	/**Initialize the MPI execution environment */
-    	MPI.Init(args);
-    	
+    	argsMain=args;
+    	MPI.Init(argsMain);
+//    	System.out.println(args[0]);
     	/** 
     	 * When a program is ran with MPI
     	 * all the processes are grouped in
     	 * what we call a communicator.
     	 *   
     	 *   */
-    	
+//    	String[] nesto = new String[3];
+//    	nesto[0]="";
+//    	nesto[1]="";
+//    	nesto[2]="";
+//    	String[] prazan=null;
+//    	
+//    	Main.main(nesto);
+    	for(int i = 0; i<args.length;i++) {
+    		System.out.print(args[i]+"___ ");
+    	}
+    	System.out.println();
     	//box grouping processes together
+    	
 		comunicator = MPI.COMM_WORLD;
 		
 		//Every process is connected and can communicate inside this communicator.
@@ -48,7 +63,7 @@ public class RunEdgeDetection {
 		
 		
 		
-		System.out.println("RUN EDGE DETECTION: "+currentProcessorRank +" == "+ rootProcessorRank);
+		//System.out.println("RUN EDGE DETECTION: "+currentProcessorRank +" == "+ rootProcessorRank);
 		if (currentProcessorRank == rootProcessorRank) {
 			EdgeDetectionUI ui = new EdgeDetectionUI();
 			//ui.mainFrame.setVisible(true);
@@ -68,7 +83,7 @@ public class RunEdgeDetection {
 		}
 		
 		MPI.Finalize();
-		System.out.println("COOOOOONGRAAAAAAATSSSSS" + counter);
+		//System.out.println("COOOOOONGRAAAAAAATSSSSS" + counter);
 		return;
     	
     	

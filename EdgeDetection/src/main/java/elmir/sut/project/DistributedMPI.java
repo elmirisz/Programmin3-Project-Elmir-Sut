@@ -16,7 +16,7 @@ public class DistributedMPI {
 	
 	
 	//needed to know how to slice our data 
-	private static int numberOfProcessors = RunEdgeDetection.numberOfProcessors;
+	//private static int numberOfProcessors = RunEdgeDetection.numberOfProcessors;
 	
 	private static int currentProcessorRank;
 	
@@ -29,19 +29,19 @@ public class DistributedMPI {
 //	static double[][] input1;
 //	static double[][] input2;
 //	static double[][] input3;
-    static int width;
-    static int height;
-    static double[][] kernel;
-    static int kernelWidth;
-    static int kernelHeight;
-    int smallWidth = width - kernelWidth + 1;//this is used so we do not come till edge of picture without sufficent pixels
-    int smallHeight = height - kernelHeight + 1; 
-    double[][] output;
+//    static int width;
+//    static int height;
+//    static double[][] kernel;
+//    static int kernelWidth;
+//    static int kernelHeight;
+//    int smallWidth = width - kernelWidth + 1;//this is used so we do not come till edge of picture without sufficent pixels
+//    int smallHeight = height - kernelHeight + 1; 
+//    double[][] output;
     static double[] arrayImage1;
     static double[] arrayImage2;
     static double[] arrayImage3;
-    static double[] arrayImage;
-    static double[]kernelArray;
+//    //static double[] arrayImage;
+//    static double[]kernelArray;
     
     //setter
     DistributedMPI(double[][] A1, double[][] A2, double[][] A3,
@@ -50,34 +50,39 @@ public class DistributedMPI {
             int kernelWidth,
             int kernelHeight) throws InterruptedException{
     	
-//		this.input1=A1;
-//		this.input2=A2;
-//		this.input3=A3;
-		this.width=width;
-		this.height=height;
-		this.kernel=kernel;
-		this.kernelWidth=kernelWidth;
-		this.kernelHeight=kernelHeight;
-		
-		
-		arrayImage1 = convertMatrixToArray(A1); //WORKS
-		arrayImage2 = convertMatrixToArray(A2); //WORKS
-		arrayImage3 = convertMatrixToArray(A3); //WORKS
-		kernelArray=convertMatrixToArray(kernel);
+////		this.input1=A1;
+////		this.input2=A2;
+////		this.input3=A3;
+//		this.width=width;
+//		this.height=height;
+//		this.kernel=kernel;
+//		this.kernelWidth=kernelWidth;
+//		this.kernelHeight=kernelHeight;
+//		
+//		
+//		arrayImage1 = convertMatrixToArray(A1); //WORKS
+//		arrayImage2 = convertMatrixToArray(A2); //WORKS
+//		arrayImage3 = convertMatrixToArray(A3); //WORKS
+//		
 		
 		
 }
     
-    double[][] returnOutput() throws InterruptedException {
-    	
-    	
-    	return  convertArrayToMatrix(rootAction(arrayImage1,arrayImage2,arrayImage3), width, height);
-    }
-	
+//    double[][] returnOutput() throws InterruptedException {
+//    	
+//    	
+//    	return  convertArrayToMatrix(rootAction(arrayImage1,arrayImage2,arrayImage3), width, height);
+//    }
+//	
     
 	
-	public static double[] rootAction(double[] A1, double[] A2, double[] A3) throws InterruptedException {  
-	   
+	public static double[][] rootAction(double[][] R, double[][] G, double[][] B, int height, int width,double[][] kernel, int kernelWidth, int kernelHeight) throws InterruptedException {  
+		double[] kernelArray=convertMatrixToArray(kernel);
+		double[] A1 = convertMatrixToArray(R); //WORKS
+		double[] A2 = convertMatrixToArray(G); //WORKS
+		double[] A3 = convertMatrixToArray(B); //WORKS
+	int numberOfProcessors = RunEdgeDetection.numberOfProcessors;
+	
 	   for (int i = 1; i<numberOfProcessors; i++) {
 	   
 	    double b [] = new double[1+1+1+1+(kernelWidth*kernelHeight)];
@@ -159,14 +164,17 @@ public class DistributedMPI {
 		System.out.println("<<<<<<<<<<<<<<<<<||||||||<"+">>>||||||>>>>>>>>>>>>");
 		//MPI.Finalize();
 		System.out.println("RETURNED!");
-		arrayImage=new double[temp1.length];
+		double[] arrayImage=new double[temp1.length];
+		
 		
 		System.out.println();
 		for(int i = 0; i < temp1.length;i++) {
 			arrayImage[i]=temp1[i]+temp2[i]+temp3[i];
 		}
+		//return matrix immidately
 		
-		return arrayImage;
+		
+		 return convertArrayToMatrix(arrayImage, width, height);
 		
 	}
 	
@@ -336,6 +344,8 @@ public class DistributedMPI {
 		  
 		  return matrix;
 	  }
+
+	
 	  	
 
 }

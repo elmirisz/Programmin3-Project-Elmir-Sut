@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="BEFORE"/>
+		<item key="selection" value="createImageFromConvolutionMatrix"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
-		<item key="isRegEx" value="false"/>
+		<item key="isRegEx" value="true"/>
 		<list key="findhistory">
+			<item value="createImageFromConvolutionMatrix"/>
+			<item value="capacity"/>
+			<item value="comunicator"/>
+			<item value="arrayImage"/>
+			<item value="problem"/>
+			<item value="first"/>
+			<item value="error!!"/>
+			<item value="error"/>
+			<item value="print"/>
+			<item value="SENT!"/>
+			<item value="sent"/>
+			<item value="singlePixelConvolutionArray"/>
+			<item value="width height"/>
 			<item value="before"/>
 			<item value="actionPerformed"/>
-			<item value="width"/>
-			<item value="convolutionFinal"/>
-			<item value="currentProcessorRank"/>
-			<item value="numberOfProcessors"/>
-			<item value="frame"/>
-			<item value="rootProcessorRank"/>
-			<item value="path"/>
-			<item value="system"/>
-			<item value="image"/>
-			<item value="System"/>
-			<item value="Image panel"/>
-			<item value="basePath"/>
-			<item value="image panel"/>
 		</list>
 		<list key="replacehistory">
 			<item value="convolution"/>
