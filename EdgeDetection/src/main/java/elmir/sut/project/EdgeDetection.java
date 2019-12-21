@@ -50,6 +50,10 @@ public class EdgeDetection {
 
     private static final double[][] FILTER_SCHARR_V = {{3, 0, -3}, {10, 0, -10}, {3, 0, -3}};
     private static final double[][] FILTER_SCHARR_H = {{3, 10, 3}, {0, 0, 0}, {-3, -10, -3}};
+    
+    public static int timeS=0;
+    public static int timeP=0;
+    public static int timeD=0;
 
     private final HashMap<String, double[][]> filterMap;
 
@@ -59,16 +63,26 @@ public class EdgeDetection {
     }
 
     
-    public File detectEdges(BufferedImage bufferedImage, String selectedFilter) throws IOException, InterruptedException {
+    public File detectEdges(BufferedImage bufferedImage, String selectedFilter, String type) throws IOException, InterruptedException {
     	//place where we got read original picture, not converted to array
         double[][][] image = transformImageToArray(bufferedImage); //conversion to array
         
         double[][] filter = filterMap.get(selectedFilter);//kernel
-        
+        double[][] convolvedPixels=null;
        // numberOfProcessors = comunicator.Size();
+        if(type=="") {
+        	convolvedPixels = applyConvolution(bufferedImage.getWidth(),
+                    bufferedImage.getHeight(), image, filter); //to start process
+        }
+        if(type=="P") {
+        	convolvedPixels = applyConvolutionParallel(bufferedImage.getWidth(),
+                    bufferedImage.getHeight(), image, filter); //to start process
+        }
+        if(type=="D") {
+        	convolvedPixels = applyConvolutionDistributedMPI(bufferedImage.getWidth(),
+                    bufferedImage.getHeight(), image, filter); //to start process
+        }
         
-        double[][] convolvedPixels = applyConvolution(bufferedImage.getWidth(),
-                bufferedImage.getHeight(), image, filter); //to start process
        
         
        
@@ -112,6 +126,7 @@ public class EdgeDetection {
         }
         //System.out.println("Available threads ..." + availableThreads);
     long end = System.currentTimeMillis();
+    timeS=(int) (end-current);
     System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
         return finalConv;
     }
@@ -219,6 +234,7 @@ public class EdgeDetection {
         }
         //System.out.println("Available threads ..." + availableThreads);
         long end = System.currentTimeMillis();
+        timeP=(int) (end-current);
         System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
         
         return finalConv;
@@ -297,11 +313,12 @@ public class EdgeDetection {
         }
         //System.out.println("Available threads ..." + availableThreads);
         long end = System.currentTimeMillis();
+        
         //System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
         
         Distributed distributed = new Distributed(finalConv, height, width, filter, 3, 3); 
         finalConv= distributed.returnOutput();
-        new Main();
+       
         return finalConv;
     }
     
@@ -315,7 +332,7 @@ public class EdgeDetection {
   
 
         long end = System.currentTimeMillis();
-
+        timeD=(int) (end-current);
         System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
 
             return finalConv;

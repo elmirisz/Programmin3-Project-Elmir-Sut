@@ -79,11 +79,11 @@ import java.util.concurrent.TimeUnit;
     		
     		slice = height/cores;
             slice=slice-2;
-           // System.out.println("Output : " + output[1][1]);
+           // //System.out.println("Output : " + output[1][1]);
             
             for (int t=0; t<cores; t++) {
     			latch.countDown();
-    			//System.out.println("Latch : " + latch);
+    			////System.out.println("Latch : " + latch);
     			
     			
     			executor.execute(new Multiply(t));
@@ -101,13 +101,13 @@ import java.util.concurrent.TimeUnit;
 	        
             try {
 				executor.awaitTermination(1, TimeUnit.DAYS);
-				System.out.println(" FINISHED THREAD IN RUNNABLE" );
+				//System.out.println(" FINISHED THREAD IN RUNNABLE" );
 				checker+=100;
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-            System.out.println("Checker : " + checker);
+            //System.out.println("Checker : " + checker);
         }
         
         
@@ -141,7 +141,7 @@ import java.util.concurrent.TimeUnit;
 		@Override
 		public void run() {
 			//we can see names of our threads performing 
-			System.out.println("Thread : " + Thread.currentThread().getName());
+			//System.out.println("Thread : " + Thread.currentThread().getName());
 			
 			for (int i = 0; i < smallWidth; ++i) { //filling in the values starting from beginning
 	        	

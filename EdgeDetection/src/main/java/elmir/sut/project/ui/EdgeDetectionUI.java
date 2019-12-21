@@ -37,6 +37,11 @@ public class EdgeDetectionUI {
     File output;
 
     
+    JTextField textDesc = new JTextField("Time taken milliseconds: ");
+    JTextField sequentialText = new JTextField("Sequential");
+    JTextField parallelText = new JTextField("Parallel");
+    JTextField distributedText = new JTextField("Distributed");
+    
     public EdgeDetectionUI() throws IOException {
     	
     	//here we create instance of Edge detection to get picture and to be able to convolute it
@@ -51,13 +56,48 @@ public class EdgeDetectionUI {
         
         
         JPanel northPanel = fillNorthPanel();
+        
+        JPanel southPanel = fillSouthPanel();
 
+        
         mainFrame.add(northPanel, BorderLayout.NORTH);
+  
         mainFrame.add(mainPanel, BorderLayout.CENTER);
+        
+        mainFrame.add(southPanel, BorderLayout.SOUTH);
         mainFrame.setVisible(true);
         
     }
 //___________________________________________________________came until here
+    private JPanel fillSouthPanel() {
+        JPanel southPanel = new JPanel();
+        
+
+        //SOUTH
+        
+        
+        textDesc.setFont(sansSerifBold);
+        textDesc.setEditable(false);
+        
+        sequentialText.setFont(sansSerifBold);
+        parallelText.setFont(sansSerifBold);
+        distributedText.setFont(sansSerifBold);
+        
+        sequentialText.setEditable(false);
+        parallelText.setEditable(false);
+        distributedText.setEditable(false);
+        
+        southPanel.add(textDesc);
+        southPanel.add(sequentialText);
+        southPanel.add(parallelText);
+        southPanel.add(distributedText);
+        
+        return southPanel;
+
+    }
+    
+    
+    
     //part with buttons
     private JPanel fillNorthPanel() {
     	
@@ -82,14 +122,29 @@ public class EdgeDetectionUI {
         filterType.setFont(sansSerifBold);
         //end of dropdown
         
-        //button to apply convolution
-        JButton detect = new JButton("Apply convolution (Edge detection)");
+        //button to apply convolution NORTH
+        JButton detect = new JButton("Sequential");
+        
+        JButton detectP = new JButton("Parallel");
+        
+        JButton detectD = new JButton("Distributed");
+        
         detect.setFont(sansSerifBold);
+        
+        detectP.setFont(sansSerifBold);
+        detectD.setFont(sansSerifBold);
+        
+        
+        
         //place where we add kernel selection, image selection and convolution application
         northPanel.add(filterType);
         northPanel.add(chooseButton);
         northPanel.add(detect);
+        
+        northPanel.add(detectP);
+        northPanel.add(detectD);
 
+        
         //function supporting image selection
         chooseButton.addActionListener(event -> {
         	//here we need get absolute path 
@@ -157,7 +212,7 @@ public class EdgeDetectionUI {
                 
                 File convolvedFile;
 				try {
-					convolvedFile = edgeDetection.detectEdges(bufferedImage, (String) filterType.getSelectedItem());
+					convolvedFile = edgeDetection.detectEdges(bufferedImage, (String) filterType.getSelectedItem(), (String)"");
 					destImage.setImage(convolvedFile.getAbsolutePath());
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
@@ -168,9 +223,60 @@ public class EdgeDetectionUI {
             } catch (IOException e) {
                 //log.error("", e);
                 throw new RuntimeException(e);
-            }
+            }sequentialText.setText( "Sequential: " + EdgeDetection.timeS);
         });
-
+        
+        detectP.addActionListener(event -> {
+            try {
+            	//IMPORTANT
+            	//here I need to chop picture into pieces and bring it back together
+            	
+            	//uploaded picture
+                BufferedImage bufferedImage = ImageIO.read(new File(sourceImage.getFilePath()));
+                
+                //I need to chop it in an array and 
+                
+                File convolvedFile;
+				try {
+					convolvedFile = edgeDetection.detectEdges(bufferedImage, (String) filterType.getSelectedItem(), (String)"P");
+					destImage.setImage(convolvedFile.getAbsolutePath());
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                
+                //here I need to see whether it shows the picture, it does show.
+            } catch (IOException e) {
+                //log.error("", e);
+                throw new RuntimeException(e);
+            } parallelText.setText( "Parallel: " + EdgeDetection.timeP);
+        });
+        
+        detectD.addActionListener(event -> {
+            try {
+            	//IMPORTANT
+            	//here I need to chop picture into pieces and bring it back together
+            	
+            	//uploaded picture
+                BufferedImage bufferedImage = ImageIO.read(new File(sourceImage.getFilePath()));
+               
+                //I need to chop it in an array and 
+                
+                File convolvedFile;
+				try {
+					convolvedFile = edgeDetection.detectEdges(bufferedImage, (String) filterType.getSelectedItem(), (String) "D");
+					destImage.setImage(convolvedFile.getAbsolutePath());
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                
+                //here I need to see whether it shows the picture, it does show.
+            } catch (IOException e) {
+                //log.error("", e);
+                throw new RuntimeException(e);
+            }distributedText.setText( "Distributed: " + EdgeDetection.timeD);
+        });
         return northPanel;
     }
 
