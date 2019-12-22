@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="//System.out"/>
+		<item key="selection" value="JTextArea"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
 		<list key="findhistory">
-			<item value="placeholder"/>
+			<item value="JTextField"/>
+			<item value="System\.out"/>
+			<item value="System\.out\.println"/>
+			<item value="applyConvolutionParallel"/>
 			<item value="System.out"/>
+			<item value="placeholder"/>
 			<item value="system.out"/>
 			<item value="buildFilterMap"/>
 			<item value="createImageFromConvolutionMatrix"/>
@@ -19,12 +23,10 @@
 			<item value="problem"/>
 			<item value="first"/>
 			<item value="error!!"/>
-			<item value="error"/>
-			<item value="print"/>
-			<item value="SENT!"/>
-			<item value="sent"/>
 		</list>
 		<list key="replacehistory">
+			<item value="JTextArea"/>
+			<item value="//System\.out"/>
 			<item value="//System.out"/>
 			<item value="//system.out"/>
 			<item value="convolution"/>
