@@ -1,5 +1,105 @@
-\documentclass[11pt]{article}
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage[Algorithm]{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{amsmath}
+\usepackage[italian]{babel}
+\usepackage{stmaryrd}
+
+
+ \MakeRobust{\Call}
+
+\title{ \textbf{ Kernel Image Proccesing} }
+\author{ \textbf{ Elmir Šut} \\ \href \\ \href UP FAMNIT \\ \href{E-mail:\textit{elmirsutisz@gmail.com} }}
+ 
+ \makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
 
 \begin{document}
-This is my first Latex document.
+\twocolumn
+\date{23.12.2019}
+\maketitle
+
+\begin{textit}
+
+{This report will present a framework for calculating convolution of each pixel in an image using convolution matrix(kernel). In particular, the main focus was on using edge detection convolution matrices when solving calculations sequentially, in parallel using multiple threads and with
+message passing between multiple single-threaded processes (MPI). Measurements were recorded and played key role in deciding our final solution. 
+
+Using simple GUI (graphical user interface) results will be shown interactively with a final image and time taken to process it using  the aforementioned programs.}
+ 
+\end{textit}
+
+\section{Introduction}
+
+The smallest segment of an image is a pixel, depicted as square. Every single image is two-dimensional graphics determined by width and height, measured in pixels. Each pixel has strictly determined place and it is defined by number of bits used to save it in memory.  
+
+Pixels in monochrome images  consist of one value which represents light intensity or specific shade of grey, but in color images three values (Red, Green and Blue) are needed to create one pixel. Therefore color image is consisted of three same-size matrices, each representing one color among aforementioned color channels.
+
+Convolution is a process  where we add value of each pixel weighted by convolution matrix to its local neighbours where as a result we get new value for current pixel.\\
+\\
+The general expression of a convolution is: 
+
+
+ $
+{\displaystyle g(x,y)=\omega *f(x,y)=\sum _{s=-a}^{a}{\sum _{t=-b}^{b}{\omega (s,t)f(x-s,y-t)}}} 
+ $
+ 
+ 
+where  \textit{g(x,y)}  is the convoluted image, \textit{f(x,y)}  \justify is the image to be convoluted, $ \omega $ is the convolution matrix. Every element of the convolution matrix is considered by $  {\displaystyle -a\leq s\leq a}{\displaystyle -a\leq s\leq a} $ and ${\displaystyle -b\leq t\leq b}{\displaystyle -b\leq t\leq b}.$ \footnote{WIKIPEDIA: https://bit.ly/2EKU1dh}\\
+
+\begin{algorithm}[tbph]
+\caption{Sequential Convolution }
+\begin{algorithmic}[1]
+\Function{convolute(input, width, height, kernel, kernelW, kernelH)}{}
+\State $\textit{smallWidth} \gets \text{width - kernelWidth + 1}\textit{}$
+\State $\textit{smallHeight} \gets \text{height - kernelHeight+ 1}\textit{}$
+\State $\textit{output} \gets \text{height$  {\bigtimes}{\vartimes} $width}\textit{}$ 
+
+\For {$i \gets 0$ to $smallWidth$}
+ \State \For {$j \gets 0$ to $smallHeight$}
+   \State $output(i+1,j+1)\gets \textit{SPC(input, i, j, kernel, kernelWidth, kernelHeight)}$\\
+   \EndFor $\textbf{end for}$\\
+ \EndFor $\textbf{ end for}$\\
+ \State $\textbf{ return } output$
+ 
+\endFunction\\
+
+\Function{spc(input, x, y, kernel, kernelW, kernelH)}{}
+\State $\textit{accumulator} \gets \text{0}\textit{}$
+\For {$i \gets 0$ to $kernelWi$}
+ \State \For {$j \gets 0$ to $kernelH$}
+   \State $accumulator\gets \textit{accumulator} + input(x+i,y+j) * kernel(i,j)$\\
+   \EndFor $\textbf{end for}$\\
+ \EndFor $\textbf{ end for}$
+ \State $\textbf{ return } accumulato\\
+r$ 
+
+\end{algorithmic}
+
+\Comment{ Total complexity of this algorithm will be defined by smallWidth, smallHeight, kernelW and kernelH so we can represent it as: \\ \displaystyle O(smallWidth*smallHeight* kernelW* kernelH )}\\
+\\
+\Comment{Considering special case when image is square-shaped$\displaystyle (width == height), $}, and  kernel is square-shaped$\displaystyle (kernelW == kernelH), $ then our complexity would be  \displaystyle O((N*M)^2) }
+\end{algorithm}
+
+
+
+
+
+
+
+
+
 \end{document}
+
+
+
+
+
+
+
+
+
+
