@@ -19,9 +19,6 @@
 <item elementID="=NeuralStyleTransfer/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574564091100_1" label="Java Test Sources" name="Java Test Sources"/>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574564117001_3" label="ComputerVision" name="ComputerVision">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/common" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EdgeDetection" type="4"/>
-</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574564117001_3" label="ComputerVision" name="ComputerVision"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574564091996_2" label="Window Working Set" name="Aggregate for window 1574564091996"/>
 </workingSetManager>

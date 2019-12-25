@@ -29,6 +29,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/elmirsut/Desktop/FAKULTET/1.SEMESTAR/programiranje3/Programmin3-Project-Elmir-Sut/mpj-v0_44/lib/mpj.jar"/>
+	<classpathentry kind="lib" path="/Users/elmirsut/Desktop/FAKULTET/1.SEMESTAR/programiranje3/Git/Trying/Programmin3-Project-Elmir-Sut/mpj-v0_44/lib/mpj.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
