@@ -272,56 +272,56 @@ public class EdgeDetection {
 //    
 //    
     
-    private double[][] applyConvolutionDistributed(int width, int height, double[][][] image, double[][] filter) throws InterruptedException {
-    	long current = System.currentTimeMillis();
-    	CountDownLatch latch = new CountDownLatch(availableThreads);
-//    	ExecutorService executor = Executors.newFixedThreadPool(availableThreads);
-   	 
-       
-        //RED PARALLEL 
-//        Distributed distributed = new Distributed(image[0], height, width, filter, 3, 3); 
-//        System.out.println("EDGE DETECTION SET");
-//        double[][] redConv =distributed.returnOutput();
-//        System.out.println(redConv.length +"   RRRRR" + redConv[0].length);
-    	double[][] redConv =image[0];
-    	
-       
-      //GREEN PARALLEL 
-        //   
-       // double[][] greenConv =distributed.returnOutput();
-        
-        double[][] greenConv =image[1];
-
-        
-       
-//      //BLUE PARALLEL 
-       // distributed = new Distributed(image[2], height, width, filter, 3, 3);
+//    private double[][] applyConvolutionDistributed(int width, int height, double[][][] image, double[][] filter) throws InterruptedException {
+//    	long current = System.currentTimeMillis();
+//    	CountDownLatch latch = new CountDownLatch(availableThreads);
+////    	ExecutorService executor = Executors.newFixedThreadPool(availableThreads);
+//   	 
 //       
-//         
-        
-       //double[][] blueConv =distributed.returnOutput();
-        double[][] blueConv=image[2];
-        
-        
-        double[][] finalConv = new double[redConv.length][redConv[0].length];
-        //here we create gray version of convolution
-        
-        for (int i = 0; i < redConv.length; i++) {
-            for (int j = 0; j < redConv[i].length; j++) {
-                finalConv[i][j] = (redConv[i][j] + greenConv[i][j] + blueConv[i][j])/3;
-            }
-        }
-        //System.out.println("Available threads ..." + availableThreads);
-        long end = System.currentTimeMillis();
-        
-        //System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
-        
-        Distributed distributed = new Distributed(finalConv, height, width, filter, 3, 3); 
-        finalConv= distributed.returnOutput();
-       
-        return finalConv;
-    }
-    
+//        //RED PARALLEL 
+////        Distributed distributed = new Distributed(image[0], height, width, filter, 3, 3); 
+////        System.out.println("EDGE DETECTION SET");
+////        double[][] redConv =distributed.returnOutput();
+////        System.out.println(redConv.length +"   RRRRR" + redConv[0].length);
+//    	double[][] redConv =image[0];
+//    	
+//       
+//      //GREEN PARALLEL 
+//        //   
+//       // double[][] greenConv =distributed.returnOutput();
+//        
+//        double[][] greenConv =image[1];
+//
+//        
+//       
+////      //BLUE PARALLEL 
+//       // distributed = new Distributed(image[2], height, width, filter, 3, 3);
+////       
+////         
+//        
+//       //double[][] blueConv =distributed.returnOutput();
+//        double[][] blueConv=image[2];
+//        
+//        
+//        double[][] finalConv = new double[redConv.length][redConv[0].length];
+//        //here we create gray version of convolution
+//        
+//        for (int i = 0; i < redConv.length; i++) {
+//            for (int j = 0; j < redConv[i].length; j++) {
+//                finalConv[i][j] = (redConv[i][j] + greenConv[i][j] + blueConv[i][j])/3;
+//            }
+//        }
+//        //System.out.println("Available threads ..." + availableThreads);
+//        long end = System.currentTimeMillis();
+//        
+//        //System.out.println("TIME TAKEN: " + (end-current) + " Milliseconds");
+//        
+//        Distributed distributed = new Distributed(finalConv, height, width, filter, 3, 3); 
+//        finalConv= distributed.returnOutput();
+//       
+//        return finalConv;
+//    }
+//    
     
     private double[][] applyConvolutionDistributedMPI(int width, int height, double[][][] image, double[][] filter) throws InterruptedException {
         long current = System.currentTimeMillis();

@@ -9,14 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>HandWrittenDigitRecognizer</module>
+
         <module>EdgeDetection</module>
-        <module>CatVsDogRecognition</module>
-        <module>AutonomousDriving</module>
-        <module>NeuralStyleTransfer</module>
-        <module>FaceRecognition</module>
+
+
         <module>common</module>
-        <module>CarTracking</module>
+
     </modules>
 
     <properties>
@@ -45,11 +43,6 @@
             <version>${lombok.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.deeplearning4j</groupId>
-            <artifactId>deeplearning4j-core</artifactId>
-            <version>${deeplearning4j.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.nd4j</groupId>
             <artifactId>nd4j-native-platform</artifactId>

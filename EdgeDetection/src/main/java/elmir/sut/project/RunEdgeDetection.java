@@ -27,6 +27,7 @@ public class RunEdgeDetection {
     	argsMain=args;
     	MPI.Init(argsMain);
     	System.out.println(args[0]);
+    	
     	/** 
     	 * When a program is ran with MPI
     	 * all the processes are grouped in

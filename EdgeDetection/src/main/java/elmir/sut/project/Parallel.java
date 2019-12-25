@@ -82,9 +82,7 @@ import java.util.concurrent.TimeUnit;
            // //System.out.println("Output : " + output[1][1]);
             
             for (int t=0; t<cores; t++) {
-    			latch.countDown();
     			////System.out.println("Latch : " + latch);
-    			
     			
     			executor.execute(new Multiply(t));
     			
